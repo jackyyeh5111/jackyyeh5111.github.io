@@ -83,13 +83,13 @@ keywords = ["Theme", "Hugo"]
     avatarLinkURL = ""
     # title shown in home page (HTML format is supported)
     # 主页显示的网站标题 (支持 HTML 格式)
-    title = ""
+    title = "Hey there"
     # subtitle shown in home page
     # 主页显示的网站副标题
-    subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+    subtitle = "Hey there! 👋 I'm a software whiz on a mission to make cool stuff that makes the world better. By day, I'm coding up a storm in Computer Vision & Robotics, and by night, you'll catch me with a cappuccino in hand, turning ideas into reality. Oh, and I'm a meditation enthusiast too! Stick around for a tech-fueled adventure where code meets caffeine and good vibes. Let's make waves in the digital realm together! 🚀"
     # whether to use typeit animation for subtitle
     # 是否为副标题显示打字机动画
-    typeit = true
+    typeit = false
     # whether to show social links
     # 是否显示社交账号
     social = true
@@ -99,7 +99,7 @@ keywords = ["Theme", "Hugo"]
   # Home page posts
   # 主页文章列表
   [home.posts]
-    enable = true
+    enable = false
     # special amount of posts in each home posts page
     # 主页每页显示文章数量
     paginate = 7
