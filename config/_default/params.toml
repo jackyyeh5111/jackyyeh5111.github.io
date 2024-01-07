@@ -50,7 +50,7 @@ cacheRemoteImages = false
     logo = "https://hugodoit.pages.dev/images/avatar.webp"
     # title name
     # 标题名称
-    name = "Jacky Yeh's Blog"
+    name = "Jacky Yeh's Website"
     # you can add extra information before the name (HTML format is supported), such as icons
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
     # pre = "<i class='far fa-edit fa-fw'></i>"
@@ -64,7 +64,7 @@ cacheRemoteImages = false
 # Footer config
 # 页面底部信息配置
 [footer]
-  enable = true
+  enable = false
   # Custom content (HTML format is supported)
   # 自定义内容 (支持 HTML 格式)
   custom = ''
@@ -224,11 +224,15 @@ cacheRemoteImages = false
     [page.header.number]
       enable = true
       [page.header.number.format]
-        h2 = "{h2} {title}"
-        h3 = "{h2}.{h3} {title}"
-        h4 = "{h2}.{h3}.{h4} {title}"
-        h5 = "{h2}.{h3}.{h4}.{h5} {title}"
-        h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
+        h2 = "{h2}. {title}"
+        h3 = "{title}"
+        h4 = "{title}"
+        h5 = "{title}"
+        h6 = "{title}"
+        # h3 = "{h2}.{h3} {title}"
+        # h4 = "{h2}.{h3}.{h4} {title}"
+        # h5 = "{h2}.{h3}.{h4}.{h5} {title}"
+        # h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
   # KaTeX mathematical formulas config (KaTeX https://katex.org/)
   # KaTeX 数学公式配置 (KaTeX https://katex.org/)
   [page.math]
@@ -309,7 +313,7 @@ cacheRemoteImages = false
     Weixin = ""
     Whatsapp = false
     Xing = false
-    Mastodon = true
+    Mastodon = false
   # Comment config
   # 评论系统设置
   [page.comment]

@@ -1,4 +1,4 @@
-# My first note
+# How to create diagrams in DoIt
 
 
 <!--more-->
@@ -573,8 +573,5 @@ journey
     section Go home
       Go downstairs: 5: Me
       Sit down: 5: Me
-```
-
-down: 5: Me
 ```
 

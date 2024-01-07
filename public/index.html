@@ -61,9 +61,7 @@
         title="https://hugodoit.pages.dev/images/avatar.webp" ><span id="desktop-header-typeit" class="typeit"></span></a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/showcase/"> Showcase </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;"><option value="/" selected>English</option><option value="/zh-cn/">简体中文</option></select>
-                    </a><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/showcase/"> Showcase </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw"></i>
@@ -74,8 +72,14 @@
                         <span class="search-button search-loading" id="search-loading-desktop">
                             <i class="fas fa-spinner fa-fw fa-spin"></i>
                         </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    </span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
                 </a></div>
         </div>
     </div>
@@ -112,8 +116,14 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/showcase/" title="">Showcase</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/showcase/" title="">Showcase</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
             </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/" selected>English</option><option value="/zh-cn/">简体中文</option></select>
                 </a></div>
@@ -126,135 +136,15 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-            <div class="container"><div class="page home" posts><div class="home-profile"><div class="home-avatar"><a href="/posts/" title="Posts"><img
+            <div class="container"><div class="page home"><div class="home-profile"><div class="home-avatar"><a href="/posts/" title="Posts"><img
         
         loading="eager"
         src="/images/avatar.webp"
         srcset="/images/avatar.webp, /images/avatar.webp 1.5x, /images/avatar.webp 2x"
         sizes="auto"
         alt="/images/avatar.webp"
-        title="/images/avatar.webp" height="100"   width="100" ></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/xxxx" title="GitHub" target="_blank" rel="noopener noreferrer me"><span class="fab fa-github-alt fa-fw"></span></a><a href="https://twitter.com/xxxx" title="Twitter" target="_blank" rel="noopener noreferrer me"><span class="fab fa-twitter fa-fw"></span></a><a href="https://facebook.com/xxxx" title="facebook" target="_blank" rel="noopener noreferrer me"><span class="fab fa-facebook fa-fw"></span></a><a href="https://t.me/xxxx" title="Telegram" target="_blank" rel="noopener noreferrer me"><span class="fab fa-telegram-plane fa-fw"></span></a><a href="https://www.youtube.com/user/xxxx" title="YouTube" target="_blank" rel="noopener noreferrer me"><span class="fab fa-youtube fa-fw"></span></a><a href="https://mastodon.technology/@xxxx" title="Mastodon" target="_blank" rel="noopener noreferrer me"><span class="fab fa-mastodon fa-fw"></span></a><a href="https://liberapay.com/xxx" title="Liberapay" target="_blank" rel="noopener noreferrer me"><span data-svg-src="/lib/simple-icons/icons/liberapay.min.svg"></span></a><a href="https://ko-fi.com/xxx" title="Ko-Fi" target="_blank" rel="noopener noreferrer me"><span data-svg-src="/lib/simple-icons/icons/kofi.min.svg"></span></a><a href="https://yyyy/@xxxx" title="diaspora*" target="_blank" rel="noopener noreferrer me"><span data-svg-src="/lib/simple-icons/icons/diaspora.min.svg"></span></a><a href="mailto:xxxx@xxxx.com" title="Email" rel=" me"><span class="far fa-envelope fa-fw"></span></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreferrer me"><span class="fas fa-rss fa-fw"></span></a></div></div>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/theme-documentation-basics/" aria-label=Theme&#32;Documentation&#32;-&#32;Basics><img
-        
-        loading="eager"
-        src="/theme-documentation-basics/featured-image.webp"
-        srcset="/theme-documentation-basics/featured-image.webp, /theme-documentation-basics/featured-image.webp 1.5x, /theme-documentation-basics/featured-image.webp 2x"
-        sizes="auto"
-        alt="Discover what the Hugo - DoIt theme is all about and the core-concepts behind it."
-        title="Discover what the Hugo - DoIt theme is all about and the core-concepts behind it." height="840"   width="1600" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/theme-documentation-basics/">Theme Documentation - Basics</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://jackyyeh5111.github.io/authors/dillon'>Dillon</a>, <a href='https://jackyyeh5111.github.io/authors/pcloud'>PCloud</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-03">2020-03-03</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>Documentation</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/getting-start/"><i class="far fa-list-alt fa-fw"></i>Getting start with DoIt</a></span></div><div class="content"><p>Discover what the Hugo - <strong>DoIt</strong> theme is all about and the core-concepts behind it.</p></div><div class="post-footer">
-        <a href="/theme-documentation-basics/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/installation/">installation</a>,&nbsp;<a href="/tags/configuration/">configuration</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/theme-documentation-content/" aria-label=Theme&#32;Documentation&#32;-&#32;Content><img
-        
-        loading="eager"
-        src="/theme-documentation-content/featured-image.webp"
-        srcset="/theme-documentation-content/featured-image.webp, /theme-documentation-content/featured-image.webp 1.5x, /theme-documentation-content/featured-image.webp 2x"
-        sizes="auto"
-        alt="Find out how to create and organize your content quickly and intuitively in DoIt theme."
-        title="Find out how to create and organize your content quickly and intuitively in DoIt theme." height="1269"   width="2363" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/theme-documentation-content/">Theme Documentation - Content</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://jackyyeh5111.github.io/authors/dillon'>Dillon</a>, <a href='https://jackyyeh5111.github.io/authors/pcloud'>PCloud</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-04">2020-03-04</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>Documentation</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/getting-start/"><i class="far fa-list-alt fa-fw"></i>Getting start with DoIt</a></span></div><div class="content"><p>Find out how to create and organize your content quickly and intuitively in <strong>DoIt</strong> theme.</p></div><div class="post-footer">
-        <a href="/theme-documentation-content/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/content/">content</a>,&nbsp;<a href="/tags/markdown/">Markdown</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/theme-documentation-built-in-shortcodes/" aria-label=Theme&#32;Documentation&#32;-&#32;Built-in&#32;Shortcodes><img
-        
-        loading="eager"
-        src="/theme-documentation-built-in-shortcodes/featured-image.webp"
-        srcset="/theme-documentation-built-in-shortcodes/featured-image.webp, /theme-documentation-built-in-shortcodes/featured-image.webp 1.5x, /theme-documentation-built-in-shortcodes/featured-image.webp 2x"
-        sizes="auto"
-        alt="Hugo provides multiple built-in shortcodes for author convenience and to keep your markdown content clean."
-        title="Hugo provides multiple built-in shortcodes for author convenience and to keep your markdown content clean." height="500"   width="1000" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/theme-documentation-built-in-shortcodes/">Theme Documentation - Built-in Shortcodes</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://jackyyeh5111.github.io/authors/dillon'>Dillon</a>, <a href='https://jackyyeh5111.github.io/authors/pcloud'>PCloud</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>Documentation</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/getting-start/"><i class="far fa-list-alt fa-fw"></i>Getting start with DoIt</a></span></div><div class="content"><p><strong>Hugo</strong> provides multiple built-in shortcodes for author convenience and to keep your markdown content clean.</p></div><div class="post-footer">
-        <a href="/theme-documentation-built-in-shortcodes/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/shortcodes/">shortcodes</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/theme-documentation-extended-shortcodes/" aria-label=Theme&#32;Documentation&#32;-&#32;Extended&#32;Shortcodes><img
-        
-        loading="eager"
-        src="/theme-documentation-extended-shortcodes/featured-image-preview.webp"
-        srcset="/theme-documentation-extended-shortcodes/featured-image-preview.webp, /theme-documentation-extended-shortcodes/featured-image-preview.webp 1.5x, /theme-documentation-extended-shortcodes/featured-image-preview.webp 2x"
-        sizes="auto"
-        alt="DoIt theme provides multiple shortcodes on top of built-in ones in Hugo."
-        title="DoIt theme provides multiple shortcodes on top of built-in ones in Hugo." height="360"   width="1200" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/theme-documentation-extended-shortcodes/">Theme Documentation - Extended Shortcodes</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://jackyyeh5111.github.io/authors/dillon'>Dillon</a>, <a href='https://jackyyeh5111.github.io/authors/pcloud'>PCloud</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>Documentation</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/getting-start/"><i class="far fa-list-alt fa-fw"></i>Getting start with DoIt</a></span></div><div class="content"><p><strong>DoIt</strong> theme provides multiple shortcodes on top of built-in ones in Hugo.</p></div><div class="post-footer">
-        <a href="/theme-documentation-extended-shortcodes/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/shortcodes/">shortcodes</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/basic-markdown-syntax/" aria-label=Basic&#32;Markdown&#32;Syntax><img
-        
-        loading="eager"
-        src="/basic-markdown-syntax/featured-image.webp"
-        srcset="/basic-markdown-syntax/featured-image.webp, /basic-markdown-syntax/featured-image.webp 1.5x, /basic-markdown-syntax/featured-image.webp 2x"
-        sizes="auto"
-        alt="This article shows the basic Markdown syntax and format."
-        title="This article shows the basic Markdown syntax and format." height="708"   width="1420" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/basic-markdown-syntax/">Basic Markdown Syntax</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://jackyyeh5111.github.io/authors/dillon'>Dillon</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-01">2019-12-01</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>Documentation</a></span></div><div class="content"><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p></div><div class="post-footer">
-        <a href="/basic-markdown-syntax/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/markdown/">Markdown</a>,&nbsp;<a href="/tags/html/">HTML</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/emoji-support/" aria-label=Emoji&#32;Support><img
-        
-        loading="eager"
-        src="/emoji-support/featured-image.webp"
-        srcset="/emoji-support/featured-image.webp, /emoji-support/featured-image.webp 1.5x, /emoji-support/featured-image.webp 2x"
-        sizes="auto"
-        alt="Guide to emoji usage in Hugo and DoIt."
-        title="Guide to emoji usage in Hugo and DoIt." height="708"   width="1420" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/emoji-support/">Emoji Support</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://jackyyeh5111.github.io/authors/dillon'>Dillon</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2019-10-01">2019-10-01</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>Documentation</a></span></div><div class="content"><p>Emoji can be enabled in a Hugo project in a number of ways.</p></div><div class="post-footer">
-        <a href="/emoji-support/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/emoji/">emoji</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/pwa-support/" aria-label=PWA&#32;Support><img
-        
-        loading="eager"
-        src="/pwa-support/featured-image.webp"
-        srcset="/pwa-support/featured-image.webp, /pwa-support/featured-image.webp 1.5x, /pwa-support/featured-image.webp 2x"
-        sizes="auto"
-        alt="Guide to setup PWA in DoIt"
-        title="Guide to setup PWA in DoIt" height="620"   width="1280" ></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/pwa-support/">PWA Support</a>
-    </h1><div class="post-meta">
-        <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://jackyyeh5111.github.io/authors/pcloud'>PCloud</a></span>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2021-05-10">2021-05-10</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>Documentation</a></span></div><div class="content"><p>Find out how to turn your DoIt site into a Progressive Web App.</p></div><div class="post-footer">
-        <a href="/pwa-support/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/pwa/">PWA</a></div></div>
-</article><ul class="pagination"><li class="page-item active">
-                    <span class="page-link">
-                        <a href="/">1</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/2/">2</a>
-                    </span>
-                </li></ul></div></div>
+        title="/images/avatar.webp" height="100"   width="100" ></a></div><h1 class="home-title">Hey there</h1><h2 class="home-subtitle">Hey there! 👋 I&#39;m a software whiz on a mission to make cool stuff that makes the world better. By day, I&#39;m coding up a storm in Computer Vision &amp; Robotics, and by night, you&#39;ll catch me with a cappuccino in hand, turning ideas into reality. Oh, and I&#39;m a meditation enthusiast too! Stick around for a tech-fueled adventure where code meets caffeine and good vibes. Let&#39;s make waves in the digital realm together! 🚀</h2><div class="links"><a href="https://github.com/xxxx" title="GitHub" target="_blank" rel="noopener noreferrer me"><span class="fab fa-github-alt fa-fw"></span></a><a href="https://twitter.com/xxxx" title="Twitter" target="_blank" rel="noopener noreferrer me"><span class="fab fa-twitter fa-fw"></span></a><a href="https://facebook.com/xxxx" title="facebook" target="_blank" rel="noopener noreferrer me"><span class="fab fa-facebook fa-fw"></span></a><a href="https://t.me/xxxx" title="Telegram" target="_blank" rel="noopener noreferrer me"><span class="fab fa-telegram-plane fa-fw"></span></a><a href="https://www.youtube.com/user/xxxx" title="YouTube" target="_blank" rel="noopener noreferrer me"><span class="fab fa-youtube fa-fw"></span></a><a href="https://mastodon.technology/@xxxx" title="Mastodon" target="_blank" rel="noopener noreferrer me"><span class="fab fa-mastodon fa-fw"></span></a><a href="https://liberapay.com/xxx" title="Liberapay" target="_blank" rel="noopener noreferrer me"><span data-svg-src="/lib/simple-icons/icons/liberapay.min.svg"></span></a><a href="https://ko-fi.com/xxx" title="Ko-Fi" target="_blank" rel="noopener noreferrer me"><span data-svg-src="/lib/simple-icons/icons/kofi.min.svg"></span></a><a href="https://yyyy/@xxxx" title="diaspora*" target="_blank" rel="noopener noreferrer me"><span data-svg-src="/lib/simple-icons/icons/diaspora.min.svg"></span></a><a href="mailto:xxxx@xxxx.com" title="Email" rel=" me"><span class="far fa-envelope fa-fw"></span></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreferrer me"><span class="fas fa-rss fa-fw"></span></a></div></div>
+</div></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
                     Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.121.1">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
@@ -269,7 +159,8 @@
         </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
             <i class="fas fa-comment fa-fw"></i>
         </a>
-    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"data":{"desktop-header-typeit":"DoIt","id-1":"A Clean, Elegant but Advanced Hugo Theme","mobile-header-typeit":"DoIt"},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"id-1":["id-1"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+    </div><div class="assets"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"data":{"desktop-header-typeit":"Jacky Yeh's Blog","mobile-header-typeit":"Jacky Yeh's Blog"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
 </body>
 
 </html>

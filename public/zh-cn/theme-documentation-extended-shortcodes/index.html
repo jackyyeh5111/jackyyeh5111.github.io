@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/" /><meta property="og:image" content="https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/featured-image-preview.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-03-06T16:29:59+08:00" />
 <meta property="article:modified_time" content="2023-12-31T03:32:46-06:00" /><meta property="og:site_name" content="Hugo DoIt Theme Documentation" />
-<meta property="og:see_also" content="https://jackyyeh5111.github.io/zh-cn/theme-documentation-basics/" /><meta property="og:see_also" content="https://jackyyeh5111.github.io/zh-cn/theme-documentation-content/" /><meta property="og:see_also" content="https://jackyyeh5111.github.io/zh-cn/theme-documentation-built-in-shortcodes/" />
+<meta property="og:see_also" content="https://jackyyeh5111.github.io/zh-cn/jacky-test/" /><meta property="og:see_also" content="https://jackyyeh5111.github.io/zh-cn/lane-following-using-pure-pursuit-controller-on-f1tenth-car/" /><meta property="og:see_also" content="https://jackyyeh5111.github.io/zh-cn/theme-documentation-basics/" /><meta property="og:see_also" content="https://jackyyeh5111.github.io/zh-cn/theme-documentation-content/" /><meta property="og:see_also" content="https://jackyyeh5111.github.io/zh-cn/theme-documentation-built-in-shortcodes/" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
@@ -42,8 +42,8 @@
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
                     "url": "https://jackyyeh5111.github.io/images/avatar.webp",
-                    "width":  528 ,
-                    "height":  560 
+                    "width":  640 ,
+                    "height":  640 
                 }},"authors": [{
                         "@type": "Person",
                         "name": "Dillon"                    
@@ -77,9 +77,7 @@
         title="https://hugodoit.pages.dev/images/avatar.webp" ><span id="desktop-header-typeit" class="typeit"></span></a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/zh-cn/posts/"> 所有文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 分类 </a><a class="menu-item" href="/zh-cn/series/"> 系列 </a><a class="menu-item" href="/zh-cn/authors/"> 作者 </a><a class="menu-item" href="/zh-cn/showcase/"> 作品 </a><a class="menu-item" href="/zh-cn/categories/documentation/"> 文档 </a><a class="menu-item" href="/zh-cn/about/"> 关于 </a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" title="选择语言" id="language-select-desktop" onchange="location = this.value;"><option value="/theme-documentation-extended-shortcodes/">English</option><option value="/zh-cn/theme-documentation-extended-shortcodes/" selected>简体中文</option></select>
-                    </a><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/zh-cn/posts/"> 所有文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 分类 </a><a class="menu-item" href="/zh-cn/series/"> 系列 </a><a class="menu-item" href="/zh-cn/authors/"> 作者 </a><a class="menu-item" href="/zh-cn/showcase/"> 作品 </a><a class="menu-item" href="/zh-cn/categories/documentation/"> 文档 </a><a class="menu-item" href="/zh-cn/about/"> 关于 </a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
                             <i class="fas fa-search fa-fw"></i>
@@ -90,8 +88,14 @@
                         <span class="search-button search-loading" id="search-loading-desktop">
                             <i class="fas fa-spinner fa-fw fa-spin"></i>
                         </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    </span><a href="javascript:void(0);" class="menu-item theme-select" title="切换主题">
                     <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
                 </a></div>
         </div>
     </div>
@@ -128,8 +132,14 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         取消
                     </a>
-                </div><a class="menu-item" href="/zh-cn/posts/" title="">所有文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">分类</a><a class="menu-item" href="/zh-cn/series/" title="">系列</a><a class="menu-item" href="/zh-cn/authors/" title="">作者</a><a class="menu-item" href="/zh-cn/showcase/" title="">作品</a><a class="menu-item" href="/zh-cn/categories/documentation/" title="">文档</a><a class="menu-item" href="/zh-cn/about/" title="">关于</a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                </div><a class="menu-item" href="/zh-cn/posts/" title="">所有文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">分类</a><a class="menu-item" href="/zh-cn/series/" title="">系列</a><a class="menu-item" href="/zh-cn/authors/" title="">作者</a><a class="menu-item" href="/zh-cn/showcase/" title="">作品</a><a class="menu-item" href="/zh-cn/categories/documentation/" title="">文档</a><a class="menu-item" href="/zh-cn/about/" title="">关于</a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-select" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" title="选择语言" onchange="location = this.value;"><option value="/theme-documentation-extended-shortcodes/">English</option><option value="/zh-cn/theme-documentation-extended-shortcodes/" selected>简体中文</option></select>
                 </a></div>
@@ -188,8 +198,7 @@
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">主题文档 - 扩展 Shortcodes</h1><div class="post-meta">
             <div class="post-meta-line">
-                <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://jackyyeh5111.github.io/zh-cn/authors/dillon'>Dillon</a>, <a href='https://jackyyeh5111.github.io/zh-cn/authors/pcloud'>PCloud</a></span>
-                </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/zh-cn/categories/documentation/"><i class="far fa-folder fa-fw"></i>文档</a></span>&nbsp;<span class="post-category">和</span>&nbsp;<span class="post-series">系列 <a href="/zh-cn/series/getting-start/"><i class="far fa-list-alt fa-fw"></i>开始使用 DoIt</a></span></div>
+                &nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/zh-cn/categories/documentation/"><i class="far fa-folder fa-fw"></i>文档</a></span>&nbsp;<span class="post-category">和</span>&nbsp;<span class="post-series">系列 <a href="/zh-cn/series/getting-start/"><i class="far fa-list-alt fa-fw"></i>开始使用 DoIt</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-03-06">2020-03-06</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-31">2023-12-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 6596 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 14 分钟&nbsp;</div>
         </div><div class="featured-image"><img
         
@@ -206,6 +215,8 @@
                                 <div class="details-content series-content">
                                     <nav>
                                         <ul>
+                                                    <li><a href="/zh-cn/jacky-test/">主题文档 - 基本概念</a></li>
+                                                    <li><a href="/zh-cn/lane-following-using-pure-pursuit-controller-on-f1tenth-car/">主题文档 - 基本概念</a></li>
                                                     <li><a href="/zh-cn/theme-documentation-basics/">主题文档 - 基本概念</a></li>
                                                     <li><a href="/zh-cn/theme-documentation-content/">主题文档 - 内容</a></li>
                                                     <li><a href="/zh-cn/theme-documentation-built-in-shortcodes/">主题文档 - 内置 Shortcodes</a></li><li><span class="active">主题文档 - 扩展 Shortcodes</span></li></ul>
@@ -2216,7 +2227,7 @@ gitGraph
 </div>
 </div><p>呈现的输出效果如下:</p>
 
-<div class="showcase-box column-2">
+<div class="showcase-box column-1">
     <div class="showcase-image">
         <a href=/theme-documentation-basics><img
         
@@ -2270,76 +2281,7 @@ $\|\boldsymbol{x}\|_{0}=\sqrt[0]{\sum_{i} x_{i}^{0}}$
 $$\|\boldsymbol{x}\|_{0}=\sqrt[0]{\sum_{i} x_{i}^{0}}$$</div>
 
         
-
-
-<h2>相关内容</h2>
-<div class="related-container">
-    <div class="related-item-container">
-            <div class="related-image">
-                <a href="/zh-cn/theme-documentation-built-in-shortcodes/"><img
-        
-        loading="lazy"
-        src="/zh-cn/theme-documentation-built-in-shortcodes/featured-image.webp"
-        srcset="/zh-cn/theme-documentation-built-in-shortcodes/featured-image.webp, /zh-cn/theme-documentation-built-in-shortcodes/featured-image.webp 1.5x, /zh-cn/theme-documentation-built-in-shortcodes/featured-image.webp 2x"
-        sizes="auto"
-        alt="DoIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode."
-        title="DoIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode." height="200"   width="400" ></a>
-            </div><h2 class="related-title">
-                <a href="/zh-cn/theme-documentation-built-in-shortcodes/">主题文档 - 内置 Shortcodes</a>
-            </h2>
-        </div>
-    
-
-</div>
-
-<div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>更新于 2023-12-31&nbsp;<a class="git-hash" href="https://github.com/HEIGE-PCloud/DoIt/commit/571626fa1bd4e5ff31fb1ddb11e0aa8cb3d28d4b" target="_blank" title="commit by Jacky2(jackyyeh511@gmail.com) 571626fa1bd4e5ff31fb1ddb11e0aa8cb3d28d4b: first init" rel="noopener noreferrer">
-                                    <i class="fas fa-hashtag fa-fw"></i>571626f</a></span>
-            </div>
-            <div class="post-info-license"></div>
-        </div>
-        <div class="post-info-line">
-            <div class="post-info-md"><span><a class="link-to-mardown" href=/zh-cn/theme-documentation-extended-shortcodes/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
-                    </span><span>|&nbsp;<a class="link-to-source" href=https://github.com/HEIGE-PCloud/DoIt/blob/main/exampleSite/content/posts/theme-documentation-extended-shortcodes/index.zh-cn.md target="_blank" rel="noopener noreferrer">查看源代码</a>
-                    </span><span>|&nbsp;<a class="link-to-edit" href=https://github.com/HEIGE-PCloud/DoIt/edit/main/exampleSite/content/posts/theme-documentation-extended-shortcodes/index.zh-cn.md target="_blank" rel="noopener noreferrer">编辑此页</a>
-                    </span><span>|&nbsp;<a class="link-to-report" href=https://github.com/HEIGE-PCloud/DoIt/issues/new?title=[bug]%20%E4%B8%BB%E9%A2%98%E6%96%87%E6%A1%A3+-+%E6%89%A9%E5%B1%95+Shortcodes&body=|Field|Value|%0A|-|-|%0A|Title|%E4%B8%BB%E9%A2%98%E6%96%87%E6%A1%A3+-+%E6%89%A9%E5%B1%95+Shortcodes|%0A|Url|https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/|%0A|Filename|https://github.com/HEIGE-PCloud/DoIt/blob/main/exampleSite/content/posts/theme-documentation-extended-shortcodes/index.zh-cn.md| target="_blank" rel="noopener noreferrer">报告问题</a>
-                    </span></div>
-            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/" data-title="主题文档 - 扩展 Shortcodes" data-hashtags="shortcodes"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/" data-hashtag="shortcodes"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 Hacker News" data-sharer="hackernews" data-url="https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/" data-title="主题文档 - 扩展 Shortcodes"><span class="fab fa-hacker-news fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/" data-title="主题文档 - 扩展 Shortcodes"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/" data-title="主题文档 - 扩展 Shortcodes" data-image="featured-image.webp" data-ralateuid="xxxx"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Telegram" data-sharer="telegram" data-url="https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/" data-title="主题文档 - 扩展 Shortcodes" data-web><span class="fab fa-telegram-plane fa-fw"></span></button><script>
-        function shareOnMastodon(title, link) {
-            const SHARE_MASTODON_DOMAIN = "share_mastodon_domain"
-            const savedDomain = localStorage.getItem(SHARE_MASTODON_DOMAIN) ?? "mastodon.social";
-            const domain = prompt("Enter your Mastodon domain", savedDomain);
-            if (domain === null) {
-                return;
-            }
-            localStorage.setItem(SHARE_MASTODON_DOMAIN, domain)
-            const text = title + "\n\n" + link;
-            const url = new URL("https://" + domain)
-            url.pathname = "share"
-            url.searchParams.append('text', text)
-            window.open(url, '_blank', "width=500,height=500,left=500,toolbar=0,status=0");
-        }
-    </script>
-    <button title="分享到 Mastodon"onclick="javascript:shareOnMastodon(&#34;主题文档 - 扩展 Shortcodes&#34;, &#34;https://jackyyeh5111.github.io/zh-cn/theme-documentation-extended-shortcodes/&#34;)"><span class="fab fa-mastodon fa-fw"></span></button></div>
-        </div>
-    </div>
-
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/zh-cn/tags/shortcodes/">shortcodes</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/zh-cn/">主页</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/zh-cn/basic-markdown-syntax/" class="prev" rel="prev" title="Markdown 基本语法"><i class="fas fa-angle-left fa-fw"></i>Markdown 基本语法</a>
-            <a href="/zh-cn/theme-documentation-built-in-shortcodes/" class="next" rel="next" title="主题文档 - 内置 Shortcodes">主题文档 - 内置 Shortcodes<i class="fas fa-angle-right fa-fw"></i></a></div>
-</div>
-<div id="comments"><div id="utterances"></div><noscript>
-                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
-            </noscript></div></article></div>
+    </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
                     由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.121.1">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
@@ -2359,7 +2301,7 @@ $$\|\boldsymbol{x}\|_{0}=\sqrt[0]{\sum_{i} x_{i}^{0}}$$</div>
     mermaid.initialize({ startOnLoad: true, theme: (window.theme === 'dark' ? 'dark' : 'default') });
 </script><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
         <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/mapbox-gl/mapbox-gl.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/aplayer/APlayer.min.css">
-        <noscript><link rel="stylesheet" href="/lib/aplayer/APlayer.min.css"></noscript><link rel="stylesheet" href="/lib/aplayer/dark.min.css"><link rel="stylesheet" href="/css/2f1ef0.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"Hugo-DoIt/utterances-comments"}},"data":{"desktop-header-typeit":"DoIt","id-2":"{\"grid\":{\"bottom\":\"5%\",\"containLabel\":true,\"left\":\"5%\",\"right\":\"5%\",\"top\":\"20%\"},\"legend\":{\"data\":[\"邮件营销\",\"联盟广告\",\"视频广告\",\"直接访问\",\"搜索引擎\"],\"top\":\"10%\"},\"series\":[{\"data\":[120,132,101,134,90,230,210],\"name\":\"邮件营销\",\"stack\":\"总量\",\"type\":\"line\"},{\"data\":[220,182,191,234,290,330,310],\"name\":\"联盟广告\",\"stack\":\"总量\",\"type\":\"line\"},{\"data\":[150,232,201,154,190,330,410],\"name\":\"视频广告\",\"stack\":\"总量\",\"type\":\"line\"},{\"data\":[320,332,301,334,390,330,320],\"name\":\"直接访问\",\"stack\":\"总量\",\"type\":\"line\"},{\"data\":[820,932,901,934,1290,1330,1320],\"name\":\"搜索引擎\",\"stack\":\"总量\",\"type\":\"line\"}],\"title\":{\"left\":\"center\",\"text\":\"折线统计图\",\"top\":\"2%\"},\"toolbox\":{\"feature\":{\"saveAsImage\":{\"title\":\"保存为图片\"}}},\"tooltip\":{\"trigger\":\"axis\"},\"xAxis\":{\"boundaryGap\":false,\"data\":[\"周一\",\"周二\",\"周三\",\"周四\",\"周五\",\"周六\",\"周日\"],\"type\":\"category\"},\"yAxis\":{\"type\":\"value\"}}","id-3":{"darkStyle":"mapbox://styles/mapbox/dark-zh-v1?optimize=true","fullscreen":true,"geolocate":true,"lat":31.233,"lightStyle":"mapbox://styles/mapbox/light-zh-v1?optimize=true","lng":121.485,"marked":true,"navigation":true,"scale":true,"zoom":12},"id-4":{"darkStyle":"mapbox://styles/mapbox/dark-zh-v1?optimize=true","fullscreen":true,"geolocate":true,"lat":37.453,"lightStyle":"mapbox://styles/mapbox/streets-zh-v1?optimize=true","lng":-122.252,"marked":false,"navigation":true,"scale":true,"zoom":10},"id-5":"这一个带有基于 \u003ca href=\"https://typeitjs.com/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eTypeIt\u003c/a\u003e 的 \u003cstrong\u003e打字动画\u003c/strong\u003e 的 \u003cem\u003e段落\u003c/em\u003e\u0026hellip;","id-6":"这一个带有基于 \u003ca href=\"https://typeitjs.com/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eTypeIt\u003c/a\u003e 的 \u003cstrong\u003e打字动画\u003c/strong\u003e 的 \u003cem\u003e段落\u003c/em\u003e\u0026hellip;","id-7":"\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cspan class=\"kd\"\u003epublic\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"kd\"\u003eclass\u003c/span\u003e\u0026nbsp;\u003cspan class=\"nc\"\u003eHelloWorld\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"p\"\u003e{\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u003c/span\u003e\u003cspan class=\"kd\"\u003epublic\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"kd\"\u003estatic\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"kt\"\u003evoid\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"nf\"\u003emain\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003eString\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"o\"\u003e[]\u003c/span\u003e\u003cspan class=\"n\"\u003eargs\u003c/span\u003e\u003cspan class=\"p\"\u003e)\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"p\"\u003e{\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u003c/span\u003e\u003cspan class=\"n\"\u003eSystem\u003c/span\u003e\u003cspan class=\"p\"\u003e.\u003c/span\u003e\u003cspan class=\"na\"\u003eout\u003c/span\u003e\u003cspan class=\"p\"\u003e.\u003c/span\u003e\u003cspan class=\"na\"\u003eprintln\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"s\"\u003e\u0026#34;Hello\u0026nbsp;World\u0026#34;\u003c/span\u003e\u003cspan class=\"p\"\u003e);\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e","id-8":"\u003cstrong\u003e首先\u003c/strong\u003e, 这个段落开始","id-9":"\u003cstrong\u003e然后\u003c/strong\u003e, 这个段落开始","mobile-header-typeit":"DoIt"},"echarts":true,"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"mapbox":{"RTLTextPlugin":"https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.0/mapbox-gl-rtl-text.js","accessToken":"pk.eyJ1IjoiZGlsbG9uenEiLCJhIjoiY2s2czd2M2x3MDA0NjNmcGxmcjVrZmc2cyJ9.aSjv2BNuZUfARvxRYjSVZQ"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"music":true,"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"zh_cn_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"id-5":["id-5"],"id-6":["id-6"],"id-7":["id-7"],"mobile-header-typeit":["mobile-header-typeit"],"paragraph":["id-8","id-9"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/echarts/echarts.min.js" defer></script><script type="text/javascript" src="/lib/echarts/macarons.min.min.js" defer></script><script type="text/javascript" src="/js/echarts.min.js" defer></script><script type="text/javascript" src="/lib/mapbox-gl/mapbox-gl.min.js"></script><script type="text/javascript" src="/lib/mapbox-gl/mapbox-gl-language.min.js"></script><script type="text/javascript" src="/lib/aplayer/APlayer.min.js" defer></script><script type="text/javascript" src="/lib/meting/Meting.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
+        <noscript><link rel="stylesheet" href="/lib/aplayer/APlayer.min.css"></noscript><link rel="stylesheet" href="/lib/aplayer/dark.min.css"><link rel="stylesheet" href="/css/2f1ef0.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"Hugo-DoIt/utterances-comments"}},"data":{"desktop-header-typeit":"Jacky Yeh's Blog","id-2":"{\"grid\":{\"bottom\":\"5%\",\"containLabel\":true,\"left\":\"5%\",\"right\":\"5%\",\"top\":\"20%\"},\"legend\":{\"data\":[\"邮件营销\",\"联盟广告\",\"视频广告\",\"直接访问\",\"搜索引擎\"],\"top\":\"10%\"},\"series\":[{\"data\":[120,132,101,134,90,230,210],\"name\":\"邮件营销\",\"stack\":\"总量\",\"type\":\"line\"},{\"data\":[220,182,191,234,290,330,310],\"name\":\"联盟广告\",\"stack\":\"总量\",\"type\":\"line\"},{\"data\":[150,232,201,154,190,330,410],\"name\":\"视频广告\",\"stack\":\"总量\",\"type\":\"line\"},{\"data\":[320,332,301,334,390,330,320],\"name\":\"直接访问\",\"stack\":\"总量\",\"type\":\"line\"},{\"data\":[820,932,901,934,1290,1330,1320],\"name\":\"搜索引擎\",\"stack\":\"总量\",\"type\":\"line\"}],\"title\":{\"left\":\"center\",\"text\":\"折线统计图\",\"top\":\"2%\"},\"toolbox\":{\"feature\":{\"saveAsImage\":{\"title\":\"保存为图片\"}}},\"tooltip\":{\"trigger\":\"axis\"},\"xAxis\":{\"boundaryGap\":false,\"data\":[\"周一\",\"周二\",\"周三\",\"周四\",\"周五\",\"周六\",\"周日\"],\"type\":\"category\"},\"yAxis\":{\"type\":\"value\"}}","id-3":{"darkStyle":"mapbox://styles/mapbox/dark-zh-v1?optimize=true","fullscreen":true,"geolocate":true,"lat":31.233,"lightStyle":"mapbox://styles/mapbox/light-zh-v1?optimize=true","lng":121.485,"marked":true,"navigation":true,"scale":true,"zoom":12},"id-4":{"darkStyle":"mapbox://styles/mapbox/dark-zh-v1?optimize=true","fullscreen":true,"geolocate":true,"lat":37.453,"lightStyle":"mapbox://styles/mapbox/streets-zh-v1?optimize=true","lng":-122.252,"marked":false,"navigation":true,"scale":true,"zoom":10},"id-5":"这一个带有基于 \u003ca href=\"https://typeitjs.com/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eTypeIt\u003c/a\u003e 的 \u003cstrong\u003e打字动画\u003c/strong\u003e 的 \u003cem\u003e段落\u003c/em\u003e\u0026hellip;","id-6":"这一个带有基于 \u003ca href=\"https://typeitjs.com/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eTypeIt\u003c/a\u003e 的 \u003cstrong\u003e打字动画\u003c/strong\u003e 的 \u003cem\u003e段落\u003c/em\u003e\u0026hellip;","id-7":"\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cspan class=\"kd\"\u003epublic\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"kd\"\u003eclass\u003c/span\u003e\u0026nbsp;\u003cspan class=\"nc\"\u003eHelloWorld\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"p\"\u003e{\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u003c/span\u003e\u003cspan class=\"kd\"\u003epublic\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"kd\"\u003estatic\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"kt\"\u003evoid\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"nf\"\u003emain\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003eString\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"o\"\u003e[]\u003c/span\u003e\u003cspan class=\"n\"\u003eargs\u003c/span\u003e\u003cspan class=\"p\"\u003e)\u003c/span\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan class=\"p\"\u003e{\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u003c/span\u003e\u003cspan class=\"n\"\u003eSystem\u003c/span\u003e\u003cspan class=\"p\"\u003e.\u003c/span\u003e\u003cspan class=\"na\"\u003eout\u003c/span\u003e\u003cspan class=\"p\"\u003e.\u003c/span\u003e\u003cspan class=\"na\"\u003eprintln\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"s\"\u003e\u0026#34;Hello\u0026nbsp;World\u0026#34;\u003c/span\u003e\u003cspan class=\"p\"\u003e);\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e","id-8":"\u003cstrong\u003e首先\u003c/strong\u003e, 这个段落开始","id-9":"\u003cstrong\u003e然后\u003c/strong\u003e, 这个段落开始","mobile-header-typeit":"Jacky Yeh's Blog"},"echarts":true,"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"mapbox":{"RTLTextPlugin":"https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.0/mapbox-gl-rtl-text.js","accessToken":"pk.eyJ1IjoiZGlsbG9uenEiLCJhIjoiY2s2czd2M2x3MDA0NjNmcGxmcjVrZmc2cyJ9.aSjv2BNuZUfARvxRYjSVZQ"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"music":true,"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"zh_cn_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"id-5":["id-5"],"id-6":["id-6"],"id-7":["id-7"],"mobile-header-typeit":["mobile-header-typeit"],"paragraph":["id-8","id-9"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/echarts/echarts.min.js" defer></script><script type="text/javascript" src="/lib/echarts/macarons.min.min.js" defer></script><script type="text/javascript" src="/js/echarts.min.js" defer></script><script type="text/javascript" src="/lib/mapbox-gl/mapbox-gl.min.js"></script><script type="text/javascript" src="/lib/mapbox-gl/mapbox-gl-language.min.js"></script><script type="text/javascript" src="/lib/aplayer/APlayer.min.js" defer></script><script type="text/javascript" src="/lib/meting/Meting.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript">
 console.log('Just DoIt!');</script><script type="text/javascript" src="/js/utterances.min.js" defer></script></div>
 </body>
 

@@ -1,7 +1,7 @@
 # Theme Documentation - Basics
 
 
-test test Discover what the Hugo - **DoIt** theme is all about and the core-concepts behind it.
+test Discover what the Hugo - **DoIt** theme is all about and the core-concepts behind it.
 
 <!--more-->
 

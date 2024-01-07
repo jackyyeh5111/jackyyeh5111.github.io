@@ -9,7 +9,7 @@ keywords = ["Theme", "Hugo"]
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
   # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-  title = "DoIt"
+  title = "jackyyeh"
   # whether to omit favicon resource links
   # 是否隐藏网站图标资源链接
   noFavicon = false
@@ -83,10 +83,10 @@ keywords = ["Theme", "Hugo"]
     avatarLinkURL = ""
     # title shown in home page (HTML format is supported)
     # 主页显示的网站标题 (支持 HTML 格式)
-    title = "Hey there"
+    title = ""
     # subtitle shown in home page
     # 主页显示的网站副标题
-    subtitle = "Hey there! 👋 I'm a software whiz on a mission to make cool stuff that makes the world better. By day, I'm coding up a storm in Computer Vision & Robotics, and by night, you'll catch me with a cappuccino in hand, turning ideas into reality. Oh, and I'm a meditation enthusiast too! Stick around for a tech-fueled adventure where code meets caffeine and good vibes. Let's make waves in the digital realm together! 🚀"
+    subtitle = "Hey there! 👋 "
     # whether to use typeit animation for subtitle
     # 是否为副标题显示打字机动画
     typeit = false
@@ -117,14 +117,14 @@ keywords = ["Theme", "Hugo"]
   Devto = ""
   Douban = ""
   Dribbble = ""
-  Email = "xxxx@xxxx.com"
-  Facebook = "xxxx"
+  Email = "jackyyeh511@gmail.com"
+  Facebook = ""
   Fivehundredpx = ""
   Flickr = ""
   Foursquare = ""
   FreeCodeCamp = ""
   Gitea = ""
-  GitHub = "xxxx"
+  GitHub = "jackyyeh5111"
   Gitlab = ""
   Goodreads = ""
   Googlescholar = ""
@@ -133,10 +133,10 @@ keywords = ["Theme", "Hugo"]
   Jsfiddle = ""
   Keybase = ""
   Kickstarter = ""
-  Ko-Fi = "xxx"
+  Ko-Fi = ""
   Lastfm = ""
-  Liberapay = "xxx"
-  Linkedin = ""
+  Liberapay = ""
+  Linkedin = "jackyyeh/"
   Linktree = ""
   Matrix = ""
   Medium = ""
@@ -151,7 +151,7 @@ keywords = ["Theme", "Hugo"]
   Quora = ""
   Reddit = ""
   Researchgate = ""
-  RSS = true
+  RSS = false
   Skype = ""
   Slidershare = ""
   Snapchat = ""
@@ -160,11 +160,11 @@ keywords = ["Theme", "Hugo"]
   Stackoverflow = ""
   Steam = ""
   Strava = ""
-  Telegram = "xxxx"
+  Telegram = ""
   Thingiverse = ""
   Tumblr = ""
   Twitch = ""
-  Twitter = "xxxx"
+  Twitter = ""
   Vine = ""
   VK = ""
   Weibo = ""
@@ -174,14 +174,14 @@ keywords = ["Theme", "Hugo"]
   XMPP = ""
   Youtubechannel = ""
   Youtubecustom = ""
-  Youtubelegacy = "xxxx"
+  Youtubelegacy = ""
   Zhihu = ""
   [social.Mastodon]
-    id = "@xxxx"
-    prefix = "https://mastodon.technology/"
+    id = ""
+    prefix = ""
   [social.Diaspora]
-    id = "@xxxx"
-    prefix = "https://yyyy/"
+    id = ""
+    prefix = ""
 # Sponsor config
 # 赞助设置
 [sponsor]

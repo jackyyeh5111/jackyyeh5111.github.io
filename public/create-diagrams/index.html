@@ -43,8 +43,8 @@
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
                     "url": "https://jackyyeh5111.github.io/images/avatar.webp",
-                    "width":  528 ,
-                    "height":  560 
+                    "width":  640 ,
+                    "height":  640 
                 }},"authors": [{
                         "@type": "Person",
                         "name": "PCloud"                    
@@ -75,9 +75,7 @@
         title="https://hugodoit.pages.dev/images/avatar.webp" ><span id="desktop-header-typeit" class="typeit"></span></a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/showcase/"> Showcase </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;"><option value="/create-diagrams/" selected>English</option><option value="/zh-cn/create-diagrams/">简体中文</option></select>
-                    </a><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/showcase/"> Showcase </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw"></i>
@@ -88,8 +86,14 @@
                         <span class="search-button search-loading" id="search-loading-desktop">
                             <i class="fas fa-spinner fa-fw fa-spin"></i>
                         </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    </span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
                 </a></div>
         </div>
     </div>
@@ -126,8 +130,14 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/showcase/" title="">Showcase</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/showcase/" title="">Showcase</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/HEIGE-PCloud/DoIt" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
             </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/create-diagrams/" selected>English</option><option value="/zh-cn/create-diagrams/">简体中文</option></select>
                 </a></div>
@@ -172,8 +182,7 @@
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to create diagrams in DoIt</h1><h2 class="single-subtitle">Create SVG diagrams using GoAT or Mermaid in DoIt</h2><div class="post-meta">
             <div class="post-meta-line">
-                <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://jackyyeh5111.github.io/authors/pcloud'>PCloud</a></span>
-                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>Documentation</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/how-to-doit/"><i class="far fa-list-alt fa-fw"></i>How to DoIt</a></span></div>
+                &nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>Documentation</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/how-to-doit/"><i class="far fa-list-alt fa-fw"></i>How to DoIt</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-28">2022-02-28</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-31">2023-12-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2552 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;12 minutes&nbsp;</div>
         </div><div class="details series-nav open">
                                 <div class="details-summary series-title">
@@ -2503,59 +2512,7 @@ Class08 <--> C2: Cool label
 </pre></div>
 
         
-
-<div class="sponsor">
-        <div class="sponsor-avatar"></div><p class="sponsor-bio"><em>If you find this post helpful, please consider sponsoring.</em></p><a href="https://github.com/sponsors/HEIGE-PCloud" title="Sponsor" target="_blank" class="sponsor-button" rel="noopener noreferrer">
-                <i class="far fa-heart fa-fw icon" style="color: #ec6cb9;"></i>
-                <span>Sponsor</span>
-            </a></div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2023-12-31&nbsp;<a class="git-hash" href="https://github.com/HEIGE-PCloud/DoIt/commit/571626fa1bd4e5ff31fb1ddb11e0aa8cb3d28d4b" target="_blank" title="commit by Jacky2(jackyyeh511@gmail.com) 571626fa1bd4e5ff31fb1ddb11e0aa8cb3d28d4b: first init" rel="noopener noreferrer">
-                                    <i class="fas fa-hashtag fa-fw"></i>571626f</a></span>
-            </div>
-            <div class="post-info-license"></div>
-        </div>
-        <div class="post-info-line">
-            <div class="post-info-md"><span><a class="link-to-mardown" href=/create-diagrams/index.md target="_blank" rel="noopener noreferrer">Read markdown</a>
-                    </span><span>|&nbsp;<a class="link-to-source" href=https://github.com/HEIGE-PCloud/DoIt/blob/main/exampleSite/content/posts/how-to-DoIt/create-diagrams/index.en.md target="_blank" rel="noopener noreferrer">View source</a>
-                    </span><span>|&nbsp;<a class="link-to-edit" href=https://github.com/HEIGE-PCloud/DoIt/edit/main/exampleSite/content/posts/how-to-DoIt/create-diagrams/index.en.md target="_blank" rel="noopener noreferrer">Edit this page</a>
-                    </span><span>|&nbsp;<a class="link-to-report" href=https://github.com/HEIGE-PCloud/DoIt/issues/new?title=[bug]%20How+to+create+diagrams+in+DoIt&body=|Field|Value|%0A|-|-|%0A|Title|How+to+create+diagrams+in+DoIt|%0A|Url|https://jackyyeh5111.github.io/create-diagrams/|%0A|Filename|https://github.com/HEIGE-PCloud/DoIt/blob/main/exampleSite/content/posts/how-to-DoIt/create-diagrams/index.en.md| target="_blank" rel="noopener noreferrer">Report issue</a>
-                    </span></div>
-            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://jackyyeh5111.github.io/create-diagrams/" data-title="How to create diagrams in DoIt" data-via="xxxx" data-hashtags="diagram,markdown"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://jackyyeh5111.github.io/create-diagrams/" data-hashtag="diagram"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Hacker News" data-sharer="hackernews" data-url="https://jackyyeh5111.github.io/create-diagrams/" data-title="How to create diagrams in DoIt"><span class="fab fa-hacker-news fa-fw"></span></button><button title="Share on Line" data-sharer="line" data-url="https://jackyyeh5111.github.io/create-diagrams/" data-title="How to create diagrams in DoIt"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="Share on 微博" data-sharer="weibo" data-url="https://jackyyeh5111.github.io/create-diagrams/" data-title="How to create diagrams in DoIt"><span class="fab fa-weibo fa-fw"></span></button><button title="Share on Telegram" data-sharer="telegram" data-url="https://jackyyeh5111.github.io/create-diagrams/" data-title="How to create diagrams in DoIt" data-web><span class="fab fa-telegram-plane fa-fw"></span></button><script>
-        function shareOnMastodon(title, link) {
-            const SHARE_MASTODON_DOMAIN = "share_mastodon_domain"
-            const savedDomain = localStorage.getItem(SHARE_MASTODON_DOMAIN) ?? "mastodon.social";
-            const domain = prompt("Enter your Mastodon domain", savedDomain);
-            if (domain === null) {
-                return;
-            }
-            localStorage.setItem(SHARE_MASTODON_DOMAIN, domain)
-            const text = title + "\n\n" + link;
-            const url = new URL("https://" + domain)
-            url.pathname = "share"
-            url.searchParams.append('text', text)
-            window.open(url, '_blank', "width=500,height=500,left=500,toolbar=0,status=0");
-        }
-    </script>
-    <button title="Share on Mastodon"onclick="javascript:shareOnMastodon(&#34;How to create diagrams in DoIt&#34;, &#34;https://jackyyeh5111.github.io/create-diagrams/&#34;)"><span class="fab fa-mastodon fa-fw"></span></button></div>
-        </div>
-    </div>
-
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/diagram/">diagram</a>,&nbsp;<a href="/tags/markdown/">Markdown</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/create-diagrams/" class="prev" rel="prev" title="My first note"><i class="fas fa-angle-left fa-fw"></i>My first note</a>
-            <a href="/related-tests/" class="next" rel="next" title="Related tests">Related tests<i class="fas fa-angle-right fa-fw"></i></a></div>
-</div>
-<div id="comments"><div id="utterances"></div><noscript>
-                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
-            </noscript></div></article></div>
+    </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
                     Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.121.1">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
@@ -2573,7 +2530,8 @@ Class08 <--> C2: Cool label
     </div><script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true, theme: (window.theme === 'dark' ? 'dark' : 'default') });
-</script><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"Hugo-DoIt/utterances-comments"}},"data":{"desktop-header-typeit":"DoIt","mobile-header-typeit":"DoIt"},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/utterances.min.js" defer></script></div>
+</script><div class="assets"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"Hugo-DoIt/utterances-comments"}},"data":{"desktop-header-typeit":"Jacky Yeh's Blog","mobile-header-typeit":"Jacky Yeh's Blog"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/utterances.min.js" defer></script></div>
 </body>
 
 </html>

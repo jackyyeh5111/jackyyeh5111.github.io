@@ -8,6 +8,28 @@
             <atom:link href="https://jackyyeh5111.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>主题文档 - 基本概念</title>
+    <link>https://jackyyeh5111.github.io/zh-cn/jacky-test/</link>
+    <pubDate>Tue, 03 Mar 2020 21:40:32 &#43;0800</pubDate><author>
+                    <name>Dillon</name>
+                </author><author>
+                    <name>PCloud</name>
+                </author><guid>https://jackyyeh5111.github.io/zh-cn/jacky-test/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/zh-cn/jacky-test/featured-image.webp" referrerpolicy="no-referrer">
+            </div><p>探索 Hugo - <strong>DoIt</strong> 主题的全部内容和背后的核心概念.</p>]]></description>
+</item><item>
+    <title>主题文档 - 基本概念</title>
+    <link>https://jackyyeh5111.github.io/zh-cn/lane-following-using-pure-pursuit-controller-on-f1tenth-car/</link>
+    <pubDate>Tue, 03 Mar 2020 21:40:32 &#43;0800</pubDate><author>
+                    <name>Dillon</name>
+                </author><author>
+                    <name>PCloud</name>
+                </author><guid>https://jackyyeh5111.github.io/zh-cn/lane-following-using-pure-pursuit-controller-on-f1tenth-car/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/zh-cn/lane-following-using-pure-pursuit-controller-on-f1tenth-car/featured-image.webp" referrerpolicy="no-referrer">
+            </div><p>探索 Hugo - <strong>DoIt</strong> 主题的全部内容和背后的核心概念.</p>]]></description>
+</item><item>
+    <title>主题文档 - 基本概念</title>
     <link>https://jackyyeh5111.github.io/zh-cn/theme-documentation-basics/</link>
     <pubDate>Tue, 03 Mar 2020 21:40:32 &#43;0800</pubDate><author>
                     <name>Dillon</name>
@@ -77,13 +99,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/zh-cn/pwa-support/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>了解如何在 DoIt 主题中配置渐进式网络应用程序 (PWA).</p>]]></description>
-</item><item>
-    <title>如何在 DoIt 中创建图表</title>
-    <link>https://jackyyeh5111.github.io/zh-cn/create-diagrams/</link>
-    <pubDate>Mon, 28 Feb 2022 14:27:14 &#43;0000</pubDate><author>
-                    <name>PCloud</name>
-                </author><guid>https://jackyyeh5111.github.io/zh-cn/create-diagrams/</guid>
-    <description><![CDATA[这篇文档将展示如何在 DoIt 中使用 GoAT 和 Mermaid 创建 SVG 图表。]]></description>
 </item><item>
     <title>如何在 DoIt 中创建图表</title>
     <link>https://jackyyeh5111.github.io/zh-cn/create-diagrams/</link>

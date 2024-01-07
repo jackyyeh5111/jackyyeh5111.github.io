@@ -2,11 +2,11 @@
 weight: 1
 title: "Lane Following using Pure Pursuit Controller on F1TENTH Car"
 date: 2024-01-02T21:29:01+08:00
-lastmod: 2020-03-06T21:29:01+08:00
+lastmod: 2024-01-02T21:29:01+08:00
 draft: false
 # authors: ["Dillon", "PCloud"]
 description: "This is our final project for course ECE484-Principles-Of-Safe-Autonomy in 2023 Fall"
-featuredImage: "featured-image.webp"
+# featuredImage: "featured-image.webp"
 
 tags: ["installation", "configuration"]
 # categories: ["documentation"]
@@ -179,5 +179,5 @@ Please refer to the [link](https://github.com/jackyyeh5111/ECE484-Principles-Of-
 
 ## TODO
 - [ ] ML method for lane detection such as [lanenet](https://github.com/MaybeShewill-CV/lanenet-lane-detection).
-- [ ] Integrate lidar to collision avoidance .algorithm
+- [ ] Integrate lidar to collision avoidance algorithm
 - [ ] Implement MPC

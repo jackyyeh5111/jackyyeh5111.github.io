@@ -2,6 +2,24 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://jackyyeh5111.github.io/zh-cn/jacky-test/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://jackyyeh5111.github.io/jacky-test/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://jackyyeh5111.github.io/zh-cn/jacky-test/"
+                    /></url><url>
+            <loc>https://jackyyeh5111.github.io/zh-cn/lane-following-using-pure-pursuit-controller-on-f1tenth-car/</loc><lastmod>2020-03-06T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://jackyyeh5111.github.io/lane-following-using-pure-pursuit-controller-on-f1tenth-car/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://jackyyeh5111.github.io/zh-cn/lane-following-using-pure-pursuit-controller-on-f1tenth-car/"
+                    /></url><url>
             <loc>https://jackyyeh5111.github.io/zh-cn/theme-documentation-basics/</loc><lastmod>2023-12-31T03:32:46-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -65,7 +83,7 @@
                     hreflang="zh-cn"
                     href="https://jackyyeh5111.github.io/zh-cn/pwa-support/"
                     /></url><url>
-            <loc>https://jackyyeh5111.github.io/zh-cn/categories/</loc><lastmod>2023-12-31T03:32:46-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://jackyyeh5111.github.io/zh-cn/categories/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://jackyyeh5111.github.io/categories/"
@@ -74,7 +92,7 @@
                     hreflang="zh-cn"
                     href="https://jackyyeh5111.github.io/zh-cn/categories/"
                     /></url><url>
-            <loc>https://jackyyeh5111.github.io/zh-cn/tags/diagram/</loc><lastmod>2023-12-31T03:32:46-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://jackyyeh5111.github.io/zh-cn/tags/diagram/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://jackyyeh5111.github.io/tags/diagram/"
@@ -83,7 +101,7 @@
                     hreflang="zh-cn"
                     href="https://jackyyeh5111.github.io/zh-cn/tags/diagram/"
                     /></url><url>
-            <loc>https://jackyyeh5111.github.io/zh-cn/</loc><lastmod>2023-12-31T03:32:46-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://jackyyeh5111.github.io/zh-cn/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://jackyyeh5111.github.io/"
@@ -92,7 +110,7 @@
                     hreflang="zh-cn"
                     href="https://jackyyeh5111.github.io/zh-cn/"
                     /></url><url>
-            <loc>https://jackyyeh5111.github.io/zh-cn/tags/markdown/</loc><lastmod>2023-12-31T03:32:46-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://jackyyeh5111.github.io/zh-cn/tags/markdown/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://jackyyeh5111.github.io/tags/markdown/"
@@ -101,7 +119,7 @@
                     hreflang="zh-cn"
                     href="https://jackyyeh5111.github.io/zh-cn/tags/markdown/"
                     /></url><url>
-            <loc>https://jackyyeh5111.github.io/zh-cn/authors/pcloud/</loc><lastmod>2023-12-31T03:32:46-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://jackyyeh5111.github.io/zh-cn/authors/pcloud/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://jackyyeh5111.github.io/authors/pcloud/"
@@ -110,7 +128,7 @@
                     hreflang="zh-cn"
                     href="https://jackyyeh5111.github.io/zh-cn/authors/pcloud/"
                     /></url><url>
-            <loc>https://jackyyeh5111.github.io/zh-cn/posts/</loc><lastmod>2023-12-31T03:32:46-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://jackyyeh5111.github.io/zh-cn/posts/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://jackyyeh5111.github.io/posts/"
@@ -119,7 +137,7 @@
                     hreflang="zh-cn"
                     href="https://jackyyeh5111.github.io/zh-cn/posts/"
                     /></url><url>
-            <loc>https://jackyyeh5111.github.io/zh-cn/tags/</loc><lastmod>2023-12-31T03:32:46-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://jackyyeh5111.github.io/zh-cn/tags/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://jackyyeh5111.github.io/tags/"
@@ -137,7 +155,7 @@
                     hreflang="zh-cn"
                     href="https://jackyyeh5111.github.io/zh-cn/create-diagrams/"
                     /></url><url>
-            <loc>https://jackyyeh5111.github.io/zh-cn/create-diagrams/</loc><lastmod>2022-02-28T14:27:14&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://jackyyeh5111.github.io/zh-cn/create-diagrams/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://jackyyeh5111.github.io/create-diagrams/"
@@ -164,7 +182,7 @@
                     hreflang="zh-cn"
                     href="https://jackyyeh5111.github.io/zh-cn/tags/pwa/"
                     /></url><url>
-            <loc>https://jackyyeh5111.github.io/zh-cn/authors/dillon/</loc><lastmod>2023-12-31T03:32:46-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://jackyyeh5111.github.io/zh-cn/authors/dillon/</loc><lastmod>2024-01-04T12:27:20-06:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://jackyyeh5111.github.io/authors/dillon/"
