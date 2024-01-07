@@ -23,14 +23,14 @@
   url = "/showcase/"
   title = ""
   weight = 2
-[[main]]
-  identifier = "tags"
-  pre = ""
-  post = ""
-  name = "Tags"
-  url = "/tags/"
-  title = ""
-  weight = 3
+#[[main]]
+#  identifier = "tags"
+#  pre = ""
+#  post = ""
+#  name = "Tags"
+#  url = "/tags/"
+#  title = ""
+#  weight = 3
 #[[main]]
 #  identifier = "categories"
 #  pre = ""
