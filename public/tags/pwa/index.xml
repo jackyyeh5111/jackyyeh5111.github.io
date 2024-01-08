@@ -1,17 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>PWA - Tag - DoIt</title>
+        <title>PWA - Tag - jackyyeh</title>
         <link>https://jackyyeh5111.github.io/tags/pwa/</link>
-        <description>PWA - Tag - DoIt</description>
+        <description>PWA - Tag - jackyyeh</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>heige.pcloud@outlook.com (PCloud)</managingEditor>
             <webMaster>heige.pcloud@outlook.com (PCloud)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 10 May 2021 16:21:41 &#43;0100</lastBuildDate><atom:link href="https://jackyyeh5111.github.io/tags/pwa/" rel="self" type="application/rss+xml" /><item>
     <title>PWA Support</title>
-    <link>https://jackyyeh5111.github.io/pwa-support/</link>
+    <link>https://jackyyeh5111.github.io/legacy_posts/pwa-support/</link>
     <pubDate>Mon, 10 May 2021 16:21:41 &#43;0100</pubDate><author>
                     <name>PCloud</name>
-                </author><guid>https://jackyyeh5111.github.io/pwa-support/</guid>
+                </author><guid>https://jackyyeh5111.github.io/legacy_posts/pwa-support/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/pwa-support/featured-image.webp" referrerpolicy="no-referrer">
+                <img src="/legacy_posts/pwa-support/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>Find out how to turn your DoIt site into a Progressive Web App.</p>]]></description>
 </item></channel>
 </rss>

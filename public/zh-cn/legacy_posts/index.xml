@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Legacy_posts on jackyyeh</title>
+    <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/</link>
+    <description>Recent content in Legacy_posts on jackyyeh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>heige.pcloud@outlook.com (PCloud)</managingEditor>
+    <webMaster>heige.pcloud@outlook.com (PCloud)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 28 Feb 2022 14:27:14 +0000</lastBuildDate>
+    <atom:link href="https://jackyyeh5111.github.io/zh-cn/legacy_posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>主题文档 - 基本概念</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/jacky-test/</link>
+      <pubDate>Tue, 03 Mar 2020 21:40:32 +0800</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/jacky-test/</guid>
+      <description>&lt;p&gt;探索 Hugo - &lt;strong&gt;DoIt&lt;/strong&gt; 主题的全部内容和背后的核心概念.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>主题文档 - 基本概念</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/</link>
+      <pubDate>Tue, 03 Mar 2020 21:40:32 +0800</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/</guid>
+      <description>&lt;p&gt;探索 Hugo - &lt;strong&gt;DoIt&lt;/strong&gt; 主题的全部内容和背后的核心概念.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>主题文档 - 基本概念</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/theme-documentation-basics/</link>
+      <pubDate>Tue, 03 Mar 2020 21:40:32 +0800</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/theme-documentation-basics/</guid>
+      <description>&lt;p&gt;探索 Hugo - &lt;strong&gt;DoIt&lt;/strong&gt; 主题的全部内容和背后的核心概念.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>主题文档 - 内容</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/theme-documentation-content/</link>
+      <pubDate>Wed, 04 Mar 2020 16:30:05 +0800</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/theme-documentation-content/</guid>
+      <description>&lt;p&gt;了解如何在 &lt;strong&gt;DoIt&lt;/strong&gt; 主题中快速, 直观地创建和组织内容.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>主题文档 - 内置 Shortcodes</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/theme-documentation-built-in-shortcodes/</link>
+      <pubDate>Thu, 05 Mar 2020 16:29:59 +0800</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/theme-documentation-built-in-shortcodes/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>主题文档 - 扩展 Shortcodes</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/theme-documentation-extended-shortcodes/</link>
+      <pubDate>Fri, 06 Mar 2020 16:29:59 +0800</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/theme-documentation-extended-shortcodes/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DoIt&lt;/strong&gt; 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown 基本语法</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/basic-markdown-syntax/</link>
+      <pubDate>Sun, 01 Dec 2019 21:57:40 +0800</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/basic-markdown-syntax/</guid>
+      <description>&lt;p&gt;这篇文章提供了可以在 Hugo 的文章中使用的基本 Markdown 语法示例.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Emoji 支持</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/emoji-support/</link>
+      <pubDate>Tue, 01 Oct 2019 17:55:28 +0800</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji 可以通过多种方式在 Hugo 项目中启用.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PWA 支持</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/pwa-support/</link>
+      <pubDate>Mon, 10 May 2021 16:21:41 +0100</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/pwa-support/</guid>
+      <description>&lt;p&gt;了解如何在 DoIt 主题中配置渐进式网络应用程序 (PWA).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如何在 DoIt 中创建图表</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/how-to-doit/create-diagrams/</link>
+      <pubDate>Mon, 28 Feb 2022 14:27:14 +0000</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/how-to-doit/create-diagrams/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>如何在 DoIt 中创建图表</title>
+      <link>https://jackyyeh5111.github.io/zh-cn/legacy_posts/my-first-post/create-diagrams/</link>
+      <pubDate>Mon, 28 Feb 2022 14:27:14 +0000</pubDate><author>heige.pcloud@outlook.com (PCloud)</author>
+      <guid>https://jackyyeh5111.github.io/zh-cn/legacy_posts/my-first-post/create-diagrams/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

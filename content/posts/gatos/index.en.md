@@ -1,6 +1,6 @@
 ---
 weight: 1
-title: "Senior SWE @ Gatos Vision"
+title: "Senior SWE @ Gatos Vision (June 2019 - July 2022)"
 date: 2024-01-02T21:29:01+08:00
 lastmod: 2024-01-02T21:29:01+08:00
 draft: true
@@ -46,8 +46,7 @@ toc:
 
 Gatos Vision is a company dedicated to providing Automatic Optical Inspection(AOI) solutions tailored for paper-made products. 
 
-I was responsible for the following tasks:
-
+## Responsibility
 1. On-site experience
 Led engineering team to scale the deployment number of Automatic Optical Inspection(AOI) machines by over 500% in a real-world manufacturing environment.
 ![image](https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/f53f1781-3322-4df4-ad73-770af78ba98d)

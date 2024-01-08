@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Lane Following using Pure Pursuit Controller on F1TENTH Car - jackyyeh</title><meta name="Description" content="This is our final project for course ECE484-Principles-Of-Safe-Autonomy in 2023 Fall"><meta property="og:title" content="Lane Following using Pure Pursuit Controller on F1TENTH Car" />
+<meta property="og:description" content="This is our final project for course ECE484-Principles-Of-Safe-Autonomy in 2023 Fall" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/" /><meta property="og:image" content="https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/featured-image.webp" /><meta property="article:section" content="legacy_posts" />
+<meta property="article:published_time" content="2024-01-02T21:29:01+08:00" />
+<meta property="article:modified_time" content="2024-01-07T15:33:33-06:00" /><meta property="og:site_name" content="Hugo DoIt Theme Documentation" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/featured-image.webp" /><meta name="twitter:title" content="Lane Following using Pure Pursuit Controller on F1TENTH Car"/>
+<meta name="twitter:description" content="This is our final project for course ECE484-Principles-Of-Safe-Autonomy in 2023 Fall"/>
+<meta name="application-name" content="jackyyeh">
+<meta name="apple-mobile-web-app-title" content="jackyyeh">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/" /><link rel="prev" href="https://jackyyeh5111.github.io/legacy_posts/jacky-test/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Lane Following using Pure Pursuit Controller on F1TENTH Car",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/"
+        },"image": ["https://jackyyeh5111.github.io/images/Apple-Devices-Preview.png"],"genre": "legacy_posts","keywords": "installation, configuration","wordcount":  859 ,
+        "url": "https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/","datePublished": "2024-01-02T21:29:01+08:00","dateModified": "2024-01-07T15:33:33-06:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https://jackyyeh5111.github.io/images/avatar.webp",
+                    "width":  640 ,
+                    "height":  640 
+                }},"author": {
+                "@type": "Person",
+                "name": "PCloud"
+            },"description": "This is our final project for course ECE484-Principles-Of-Safe-Autonomy in 2023 Fall"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="jackyyeh"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        sizes="auto"
+        alt="https://hugodoit.pages.dev/images/avatar.webp"
+        title="https://hugodoit.pages.dev/images/avatar.webp" ><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/showcase/"> Projects </a><a class="menu-item" href="/experience/"> Experience </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="black">Black</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="jackyyeh"><img
+        class="logo"
+        loading="lazy"
+        src="https://hugodoit.pages.dev/images/avatar.webp"
+        srcset="https://hugodoit.pages.dev/images/avatar.webp, https://hugodoit.pages.dev/images/avatar.webp 1.5x, https://hugodoit.pages.dev/images/avatar.webp 2x"
+        sizes="auto"
+        alt="https://hugodoit.pages.dev/images/avatar.webp"
+        title="https://hugodoit.pages.dev/images/avatar.webp" ><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/showcase/" title="">Projects</a><a class="menu-item" href="/experience/" title="">Experience</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-select" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="black">Black</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/" selected>English</option><option value="/zh-cn/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/">简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Lane Following using Pure Pursuit Controller on F1TENTH Car</h1><div class="content" id="content"><style>
+    figure {
+      padding: 4px;
+      text-align: center;
+      margin: auto;
+    }
+
+    figcaption {
+      background-color: black;
+      color: white;
+      font-style: italic;
+      padding: 1px;
+      text-align: center;
+    }
+
+    .github {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: black;
+        padding: 6px;
+        color: white;
+        text-align: center;
+        transition-duration: 0.4s;
+    }
+    .github:hover {
+        background-color: #5c666f;
+    }
+</style>
+<button class="github">
+    <a href="https://github.com/jackyyeh5111/ECE484-Principles-Of-Safe-Autonomy-2023Fall-Final/tree/main" style="color: white"><i class="fab fa-github mr-1"></i> Github Repository </a>
+</button>
+<p>Welcome! This is our final project for course ECE484-Principles-Of-Safe-Autonomy in 2023 Fall. The course page can be found <a href="https://publish.illinois.edu/robotics-autonomy-resources/f1tenth/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p>The project implements a vision-based lane following system. Our aim to make vehicle follow the lane accurately and quickly without collision using Pure Pursuit Controller given RGB images. Our vehicle platform is build on <a href="https://f1tenth.org/" target="_blank" rel="noopener noreferrer">F1TENTH</a>.</p>
+<p>Please check out our <a href="https://www.youtube.com/watch?v=mselI6W_V-o" target="_blank" rel="noopener noreferrer">final presentation video</a> for brief summary for the proejct.</p>
+<h2 id="overview" class="headerLink">
+    <a href="#overview" class="header-mark"></a>1. Overview</h2><p>The vehicle is able to follow the lane accurately without collision:</p>
+<figure style="border-style: none">
+<img src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/7e11faf1-e84e-420c-ac01-fbc8b3902dc0">
+</figure>
+<h2 id="method" class="headerLink">
+    <a href="#method" class="header-mark"></a>2. Method</h2><figure>
+          <img width="936" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/2c44461c-4c9d-469f-abe3-95bb0d005945">
+      <figcaption>Figure 1: method diagram</figcaption>
+    </figure>
+<p>The project built vision-based lane following system from scratch. Lane detector identifies the lane from the captured frame and provides candidates of imaginary waypoint for the controller. Next, the controller selects the best waypoint based on the vehicle state, and sends out next control signal.</p>
+<p>The whole system is integrated with ROS, consisting of three primary components:</p>
+<ol>
+<li>Camera calibration</li>
+<li>Lane detection</li>
+<li>Controller</li>
+</ol>
+<h3 id="component-1---camera-calibration" class="headerLink">
+    <a href="#component-1---camera-calibration" class="header-mark"></a>Component 1 - Camera calibration</h3><h4 id="inches-to-pixels" class="headerLink">
+    <a href="#inches-to-pixels" class="header-mark"></a>Inches to pixels</h4><figure style="text-align: center">
+    <img width="789" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/6e64550e-54cd-4182-8091-342d93c39023">
+      <figcaption>Figure 2: inches to pixels</figcaption>
+    </figure>
+<p>Because the target yellow lane must stick on the ground, we can simply measure the relationship between inches and pixels by applying the projection matrix $P_{measure}$ to a planar board lying on the ground.</p>
+<h4 id="view-widen-trick" class="headerLink">
+    <a href="#view-widen-trick" class="header-mark"></a>View-widen trick</h4><p>As <strong>Figure 2</strong> shows, pixels of white board in <code>camera view</code> take up the entire area in <code>measured bird-eye view</code>. That is to say, the other pixels in <code>camera view</code> is invisible in <code>measured bird-eye view</code>.</p>
+<p>An intuitive question pops up:
+What if different project matrix $P_{detection}$ is used in lane detection, e.g.$P_{detection} \neq P_{measure}$? Can we still derive the real-world inches of detected waypoints? (We will walk through lane detection later)</p>
+<p>Yes, we can solve the problem through a combination of linear transformation as <strong>Figure 3</strong> shows.</p>
+<figure style="text-align: center">
+<img width="918" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/6534d82f-d742-4396-8d2c-d7fa27d85c3b">
+      <figcaption>Figure 3: derive real-wrold coordniate of target point</figcaption>
+    </figure>
+<h3 id="component-2---lane-detection" class="headerLink">
+    <a href="#component-2---lane-detection" class="header-mark"></a>Component 2 - Lane detection</h3><p>demo:</p>
+<figure style="border: none">
+<img width="200" alt="image" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXltaXNscHg5d2tvemNubWNmZTVzZzJ4MWp2cnUwY242a3NqZG1iYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QL9o5rpbySvFbv40mc/giphy.gif">
+</figure>
+<p>Lane detection steps:</p>
+<figure>
+<img width="874" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/7c732480-739b-4586-b533-9fe6b5d174a0">
+<figcaption>Figure 4: lane detection pipeline</figcaption>
+</figure>
+<ol>
+<li>
+<p>Perspective tranform
+Apply projection matrix $P_{detection}$ metioned in section &ldquo;view-widen trick&rdquo;.</p>
+</li>
+<li>
+<p>Thresholding</p>
+<ul>
+<li><strong>Hue thresholding</strong>: lane&rsquo;s hue should lie between hue_min and hue_max.</li>
+</ul>
+ <figure style="border: none">
+ <img width="300" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/5461155b-fe1c-44dc-8f9e-9f585f0d317f">
+ </figure>
+ - **Value thresholding**: the blue channel value should exceed a specified threshold compared to the red channel value. Our choice of utilizing multiple channels instead of a grayscale value results from experiments.
+ - **Saturation thresholding**: we found that saturation channel can well separate the histogram distribution between background and lane across most of the frames. All we have to do is find a dividing point somewhere between as **Figure 5** shows. We use cumulative distribution function(CDF) to achieve this goal. Dividing point is defined as the bin with minimum pixel number between certain CDF ratio range as **Figure 6** shows.
+ <figure style="text-align: center">
+ <img width="440" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/0f0c6bca-bd64-4155-a9f1-ac625c97713a">
+   <figcaption>Figure 5: saturation histogram.</figcaption>
+ </figure>
+ <figure style="text-align: center">
+       <img width="800" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/b7e0b5a2-0389-437d-9909-9db198850318">
+   <figcaption>Figure 6: saturation thresholding with CDF. Note that a heuristic is introduced is that the bin with minimum pixel number will appear between CDF 0.6 to 0.9.</figcaption>
+ </figure>
+</li>
+<li>
+<p>Lane fit
+Vertically adjust the window box progressively based on detected lane pixels. The initial center of the box, denoted as $w_{t}$, relies on the slope calculated from the centers of the previous two windows $w_{t-1}$ and $w_{t-2}$. Then we refine the center of each box by computing the mean of the x positions of the lane pixels included within the box. The process ends when $w_{t}$ reaches the image boundary or the number of detected pixels drops below a certain threshold.</p>
+</li>
+</ol>
+<figure style="border: none">
+         <img width="406" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/9020b5f5-2937-4687-9fc3-403a5108cc24">
+    </figure>
+<h3 id="component-3---controller" class="headerLink">
+    <a href="#component-3---controller" class="header-mark"></a>Component 3 - Controller</h3><h4 id="longitudinal-controller" class="headerLink">
+    <a href="#longitudinal-controller" class="header-mark"></a>Longitudinal controller</h4><p>We apply the dynamic speed model. Velocity decreases as the <a href="https://en.wikipedia.org/wiki/Curvature" target="_blank" rel="noopener noreferrer">curvature</a> $\kappa$ increases.
+$$
+\kappa = \frac{\vert x&rsquo;y&rsquo;&rsquo; - y&rsquo;x&rsquo;&rsquo; \vert}{(x&rsquo;^{2} + y&rsquo;^{2})^{3/2}}
+$$</p>
+<p>Mapping formula:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vel = vel_max - curvature * (vel_max - vel_min) / (curv_max - curv_min)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="lateral-controller-pure-pursuit-controller" class="headerLink">
+    <a href="#lateral-controller-pure-pursuit-controller" class="header-mark"></a>Lateral controller (Pure Pursuit controller)</h4><img width="822" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/e0f55977-56f3-4974-9221-6ad24f3aba12">
+<p>In the <a href="https://thomasfermi.github.io/Algorithms-for-Automated-Driving/Control/PurePursuit.html" target="_blank" rel="noopener noreferrer">pure pursuit method</a>, we first determine a target point from multiple waypoint candidates on the desired path. This target point is determined with respect to a predetermined look-ahead distance $l_{d}$ from the vehicle. Then we compute the steering angle $\delta$ to move toward the target point according to the kinematic bicycle model.</p>
+<p>We can get steering angle $\delta$ as below:
+$$
+\delta = \arctan \left(\frac{2 L \sin(\alpha)}{l_d}\right)
+$$
+where $l_{d}$ denotes look ahead distance, $\alpha$ denotes relative yaw error, and $L$ is the wheel base distance.</p>
+<h2 id="collision-avoidance" class="headerLink">
+    <a href="#collision-avoidance" class="header-mark"></a>3. Collision avoidance</h2><p>In this project, two criteria are employed to determine if an obstacle exists ahead.</p>
+<ol>
+<li><strong>Close last waypoint</strong>: the first criteria is that the distance of last waypoint has to be close enough, because the lane is blocked by an obstacle in the middle.</li>
+<li><strong>Not reach boundary</strong>: this criteria complements the first one. Sometimes the distance of last waypoint is close enough because the vehicle is turning instead of being blocked as case 1 in the following graph.</li>
+</ol>
+<img width="885" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/7960e9b7-7250-4608-b671-2952d8be8e18">
+<p>You may notice that this naive collision avoidance algorithm works only when the lane detection method is robust. In future work, we intend to improve the algorithm by integrating image object detection or lidar sensors.</p>
+<h2 id="troubleshooting" class="headerLink">
+    <a href="#troubleshooting" class="header-mark"></a>4. Troubleshooting</h2><ul>
+<li>Long response latency from the F1 car may result from a low battery issue.</li>
+<li>F1 car proceeds unsmoothly in a rumble if multiple control signals are sent within a single frame, even if the control signal remains unchanged.</li>
+</ul>
+<h2 id="simulation" class="headerLink">
+    <a href="#simulation" class="header-mark"></a>5. Simulation</h2><p>Please refer to the <a href="https://github.com/jackyyeh5111/ECE484-Principles-Of-Safe-Autonomy-2023Fall-Final/tree/main/controller_simulation" target="_blank" rel="noopener noreferrer">link</a> for simulation.</p>
+<img width="885" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/105990e7-43ca-422c-96f3-22af7c10cd99">
+<h2 id="todo" class="headerLink">
+    <a href="#todo" class="header-mark"></a>6. TODO</h2><ul>
+<li><i class="far fa-square fa-fw"></i> ML method for lane detection such as <a href="https://github.com/MaybeShewill-CV/lanenet-lane-detection" target="_blank" rel="noopener noreferrer">lanenet</a>.</li>
+<li><i class="far fa-square fa-fw"></i> Integrate lidar to collision avoidance .algorithm</li>
+<li><i class="far fa-square fa-fw"></i> Implement MPC</li>
+</ul>
+</div><div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></div></div>
+        </main></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"Hugo-DoIt/utterances-comments"}},"data":{"desktop-header-typeit":"Jacky Yeh's Website","mobile-header-typeit":"Jacky Yeh's Website"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/utterances.min.js" defer></script></div>
+</body>
+
+</html>

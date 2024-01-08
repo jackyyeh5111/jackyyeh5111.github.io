@@ -1,11 +1,23 @@
-# Showcase
+# Projects
 
 
-{{< showcase "Lane Following using Pure Pursuit Controller on F1TENTH Car" "Skills - ROS, OpenCV, F1tenth" "https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/3c381fc3-fd02-4b45-989e-080042ea29c0" "/Lane-Following-using-Pure-Pursuit-Controller-on-F1TENTH-Car/" >}}
+{{< showcase "Lane Following using Pure Pursuit Controller on F1TENTH Car" "Skills - ROS, OpenCV, F1tenth" "https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/3c381fc3-fd02-4b45-989e-080042ea29c0" "/lane-following-using-pure-pursuit-controller-on-f1tenth-car/" >}}
 
-{{< showcase "Theme Documentation - Basics" "Discover what the Hugo - DoIt theme is all about and the core-concepts behind it." "/theme-documentation-basics/featured-image.webp" "/theme-documentation-basics/" >}}
+{{< showcase 
+"Real-time Web-based Face Mask Detection" 
+"Skills - Python, YOLO, WebRTC" 
+"https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/f17f5afd-142d-4120-a70f-f1d1d2b710cf" 
+"/real-time-web-based-face-mask-detection/" >}}
 
-{{< showcase "Theme Documentation - Content" "Find out how to create and organize your content quickly and intuitively in DoIt theme." "/theme-documentation-content/featured-image.webp" "/theme-documentation-content/" >}}
+{{< showcase 
+"Energy Bank for the Elderly (Bo Le Associates AI x CSR Competition)" 
+"Skills - LINE message API, Dialogflow, Tensorflow" 
+"https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/e22b0838-457f-43b4-afc7-8ab97647ac5d"
+"/energy-bank/" >}}
 
-{{< showcase "Theme Documentation - Extended Shortcodes" "DoIt theme provides multiple shortcodes on top of built-in ones in Hugo." "/theme-documentation-extended-shortcodes/featured-image.webp" "/theme-documentation-extended-shortcodes/" >}}
+{{< showcase 
+"Life Bus for the Visually Impaired People" 
+"Skills - AWS IoT, Raspberry pi, Design thinking" 
+"https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/25f56e87-7aa8-4878-a65d-47b3fdbbc45a"
+"/life-bus/" >}}
 

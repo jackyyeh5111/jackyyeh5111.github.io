@@ -1,37 +1,48 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>configuration - Tag - DoIt</title>
+        <title>configuration - Tag - jackyyeh</title>
         <link>https://jackyyeh5111.github.io/tags/configuration/</link>
-        <description>configuration - Tag - DoIt</description>
+        <description>configuration - Tag - jackyyeh</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>heige.pcloud@outlook.com (PCloud)</managingEditor>
             <webMaster>heige.pcloud@outlook.com (PCloud)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://jackyyeh5111.github.io/tags/configuration/" rel="self" type="application/rss+xml" /><item>
-    <title>Jacky tests</title>
-    <link>https://jackyyeh5111.github.io/jacky-test/</link>
-    <pubDate>Tue, 03 Mar 2020 21:29:01 &#43;0800</pubDate><author>
+    <title>Lane Following using Pure Pursuit Controller on F1TENTH Car</title>
+    <link>https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/</link>
+    <pubDate>Tue, 02 Jan 2024 21:29:01 &#43;0800</pubDate><author>
         <name>PCloud</name>
-    </author><guid>https://jackyyeh5111.github.io/jacky-test/</guid>
-    <description><![CDATA[Monocular Feature-Based Visual Odometry using Python OpenCVHere is github repo for the project.
-Inspired from this great post, my partner and I are determined to work on a project about visual odometry. Visual odometry is actually an another way to describe camera trajectory. The applications of which extend across various domains, serving as a foundational component for Visual Simultaneous Localization and Mapping (SLAM) systems.
-Figure 1 shows the typical pipeline for 2D-2D visual odometry.]]></description>
+    </author><guid>https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/featured-image.webp" referrerpolicy="no-referrer">
+            </div>Github Repository Welcome! This is our final project for course ECE484-Principles-Of-Safe-Autonomy in 2023 Fall. The course page can be found here.
+The project implements a vision-based lane following system. Our aim to make vehicle follow the lane accurately and quickly without collision using Pure Pursuit Controller given RGB images. Our vehicle platform is build on F1TENTH.
+Please check out our final presentation video for brief summary for the proejct.]]></description>
 </item><item>
-    <title>Jacky tests</title>
+    <title>Lane Following using Pure Pursuit Controller on F1TENTH Car</title>
     <link>https://jackyyeh5111.github.io/lane-following-using-pure-pursuit-controller-on-f1tenth-car/</link>
-    <pubDate>Tue, 03 Mar 2020 21:29:01 &#43;0800</pubDate><author>
+    <pubDate>Tue, 02 Jan 2024 21:29:01 &#43;0800</pubDate><author>
         <name>PCloud</name>
     </author><guid>https://jackyyeh5111.github.io/lane-following-using-pure-pursuit-controller-on-f1tenth-car/</guid>
+    <description><![CDATA[Github Repository Welcome! This is our final project for course ECE484-Principles-Of-Safe-Autonomy in 2023 Fall. The course page can be found here.
+The project implements a vision-based lane following system. Our aim to make vehicle follow the lane accurately and quickly without collision using Pure Pursuit Controller given RGB images. Our vehicle platform is build on F1TENTH.
+Please check out our final presentation video for brief summary for the proejct.]]></description>
+</item><item>
+    <title>Jacky tests</title>
+    <link>https://jackyyeh5111.github.io/legacy_posts/jacky-test/</link>
+    <pubDate>Tue, 03 Mar 2020 21:29:01 &#43;0800</pubDate><author>
+        <name>PCloud</name>
+    </author><guid>https://jackyyeh5111.github.io/legacy_posts/jacky-test/</guid>
     <description><![CDATA[Monocular Feature-Based Visual Odometry using Python OpenCVHere is github repo for the project.
 Inspired from this great post, my partner and I are determined to work on a project about visual odometry. Visual odometry is actually an another way to describe camera trajectory. The applications of which extend across various domains, serving as a foundational component for Visual Simultaneous Localization and Mapping (SLAM) systems.
 Figure 1 shows the typical pipeline for 2D-2D visual odometry.]]></description>
 </item><item>
     <title>Theme Documentation - Basics</title>
-    <link>https://jackyyeh5111.github.io/theme-documentation-basics/</link>
+    <link>https://jackyyeh5111.github.io/legacy_posts/theme-documentation-basics/</link>
     <pubDate>Tue, 03 Mar 2020 21:29:01 &#43;0800</pubDate><author>
                     <name>Dillon</name>
                 </author><author>
                     <name>PCloud</name>
-                </author><guid>https://jackyyeh5111.github.io/theme-documentation-basics/</guid>
+                </author><guid>https://jackyyeh5111.github.io/legacy_posts/theme-documentation-basics/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/theme-documentation-basics/featured-image.webp" referrerpolicy="no-referrer">
+                <img src="/legacy_posts/theme-documentation-basics/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>test Discover what the Hugo - <strong>DoIt</strong> theme is all about and the core-concepts behind it.</p>]]></description>
 </item></channel>
 </rss>
