@@ -40,6 +40,14 @@
 #  title = ""
 #  weight = 4
 [[main]]
+  identifier = "experience"
+  pre = ""
+  post = ""
+  name = "Experience"
+  url = "/experience/"
+  title = ""
+  weight = 7
+[[main]]
   identifier = "about"
   pre = ""
   post = ""
