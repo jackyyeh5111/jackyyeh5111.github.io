@@ -317,7 +317,7 @@ cacheRemoteImages = false
   # Comment config
   # 评论系统设置
   [page.comment]
-    enable = true
+    enable = false
     # Disqus comment config (https://disqus.com/)
     # Disqus 评论系统设置 (https://disqus.com/)
     [page.comment.disqus]
@@ -403,7 +403,7 @@ cacheRemoteImages = false
     # Utterances comment config (https://utteranc.es/)
     # Utterances comment 评论系统设置 (https://utteranc.es/)
     [page.comment.utterances]
-      enable = true
+      enable = false
       # owner/repo
       repo = "Hugo-DoIt/utterances-comments"
       issueTerm = "pathname"

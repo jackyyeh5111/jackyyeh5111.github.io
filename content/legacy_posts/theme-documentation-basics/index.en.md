@@ -569,7 +569,7 @@ Please open the code block below to view the complete sample configuration :(far
 
     # {{< version 0.2.0 changed >}} Comment config
     [params.page.comment]
-      enable = true
+      enable = false
       # {{< link "https://disqus.com/" Disqus >}} comment config
       [params.page.comment.disqus]
         # {{< version 0.1.1 >}}
