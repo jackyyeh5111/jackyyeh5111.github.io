@@ -10,7 +10,7 @@ draft: false
 {{< showcase 
 "Monocular Feature-Based Visual Odometry" 
 "Skills - Python, OpenCV, g2o" 
-"https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/f17f5afd-142d-4120-a70f-f1d1d2b710cf" 
+"https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/7cc6a839-855e-4535-8fde-fb5bc556bc09" 
 "/monocular-feature-based-visual-odometry/" >}}
 
 {{< showcase 
