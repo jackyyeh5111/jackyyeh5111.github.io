@@ -61,7 +61,7 @@ The whole system is integrated with ROS, consisting of three primary components:
 2. Lane detection
 3. Controller
 
-### Component 1 - Camera calibration
+### Component 1: Camera calibration
 
 #### Inches to pixels
 <figure style="text-align: center">
@@ -84,7 +84,7 @@ Yes, we can solve the problem through a combination of linear transformation as 
       <figcaption>Figure 3: derive real-wrold coordniate of target point</figcaption>
     </figure>
 
-### Component 2 - Lane detection
+### Component 2: Lane detection
 demo:
 <figure style="border: none">
 <img width="200" alt="image" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXltaXNscHg5d2tvemNubWNmZTVzZzJ4MWp2cnUwY242a3NqZG1iYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QL9o5rpbySvFbv40mc/giphy.gif">
@@ -103,7 +103,9 @@ Apply projection matrix $P_{detection}$ metioned in section "view-widen trick".
     <figure style="border: none">
     <img width="300" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/5461155b-fe1c-44dc-8f9e-9f585f0d317f">
     </figure>
+    
     - **Value thresholding**: the blue channel value should exceed a specified threshold compared to the red channel value. Our choice of utilizing multiple channels instead of a grayscale value results from experiments.
+    
     - **Saturation thresholding**: we found that saturation channel can well separate the histogram distribution between background and lane across most of the frames. All we have to do is find a dividing point somewhere between as **Figure 5** shows. We use cumulative distribution function(CDF) to achieve this goal. Dividing point is defined as the bin with minimum pixel number between certain CDF ratio range as **Figure 6** shows.
 
     <figure style="text-align: center">
@@ -122,7 +124,7 @@ Vertically adjust the window box progressively based on detected lane pixels. Th
          <img width="406" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/9020b5f5-2937-4687-9fc3-403a5108cc24">
     </figure>
 
-### Component 3 - Controller
+### Component 3: Controller
 #### Longitudinal controller
 We apply the dynamic speed model. Velocity decreases as the [curvature](https://en.wikipedia.org/wiki/Curvature) $\kappa$ increases.
 $$

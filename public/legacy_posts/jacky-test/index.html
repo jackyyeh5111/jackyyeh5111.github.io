@@ -35,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://jackyyeh5111.github.io/legacy_posts/jacky-test/"
-        },"image": ["https://jackyyeh5111.github.io/images/Apple-Devices-Preview.png"],"genre": "legacy_posts","keywords": "installation, configuration","wordcount":  645 ,
+        },"image": ["https://jackyyeh5111.github.io/images/Apple-Devices-Preview.png"],"genre": "legacy_posts","keywords": "installation, configuration","wordcount":  654 ,
         "url": "https://jackyyeh5111.github.io/legacy_posts/jacky-test/","datePublished": "2020-03-03T21:29:01+08:00","dateModified": "2024-01-07T15:33:33-06:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -173,14 +173,14 @@
 </figure>
 <p>For those who are not familar with what visual odometry is or what 2D-2D means, please check my previous <a href="https://hackmd.io/@jackyyeh/H12xz-bPT" target="_blank" rel="noopener noreferrer">article</a> for detailed introduction.</p>
 <h2 id="demo" class="headerLink">
-    <a href="#demo" class="header-mark"></a>1. Demo</h2><p>==TODO==</p>
+    <a href="#demo" class="header-mark"></a>1 - Demo</h2><p>==TODO==</p>
 <h2 id="problem-definition" class="headerLink">
-    <a href="#problem-definition" class="header-mark"></a>2. Problem Definition</h2><h3 id="input" class="headerLink">
+    <a href="#problem-definition" class="header-mark"></a>2 - Problem Definition</h2><h3 id="input" class="headerLink">
     <a href="#input" class="header-mark"></a>Input</h3><p>A monocular camera captures a continuous stream of grayscale images. The frames captured at time $t$ and $t+1$ can be denoted as $I_{t}$ and $I_{t+1}$ respectively. Note that we have prior knowledge for all intrinsic parameters of the camera.</p>
 <h3 id="output" class="headerLink">
     <a href="#output" class="header-mark"></a>Output</h3><p>For every pair of frames, find the rotation matrix $\textbf{R}$ and the translation vector $\textbf{t}$, which represents the camera motion between the two frames. Note that the vector $\textbf{t}$ can only be computed <a href="https://stackoverflow.com/questions/17114880/up-to-a-scale-factor" target="_blank" rel="noopener noreferrer">up to a scale factor</a> in the monocular scheme.</p>
 <h2 id="approach-outline" class="headerLink">
-    <a href="#approach-outline" class="header-mark"></a>3. Approach Outline</h2><ol>
+    <a href="#approach-outline" class="header-mark"></a>3 - Approach Outline</h2><ol>
 <li>Receive image sequence $I_{t}, I_{t+1}$.</li>
 <li>Feature detection</li>
 <li>Feature matching or Feature tracking
@@ -192,9 +192,9 @@
 <li>Compute the camera pose by motion estimation.</li>
 </ol>
 <h2 id="feature-detection" class="headerLink">
-    <a href="#feature-detection" class="header-mark"></a>4. Feature Detection</h2><p>The feature detection component in monocular visual odometry plays a crucial role in identifying distinctive points across subsequent frames. In this project, we explored various feature detectors including SIFT, ORB, FAST, and BRIEF. Each of these detectors has its own strengths and weaknesses. Experiment results are placed in the result section.</p>
+    <a href="#feature-detection" class="header-mark"></a>4 - Feature Detection</h2><p>The feature detection component in monocular visual odometry plays a crucial role in identifying distinctive points across subsequent frames. In this project, we explored various feature detectors including SIFT, ORB, FAST, and BRIEF. Each of these detectors has its own strengths and weaknesses. Experiment results are placed in the result section.</p>
 <h2 id="feature-matching--tracking" class="headerLink">
-    <a href="#feature-matching--tracking" class="header-mark"></a>5. Feature Matching / Tracking</h2><p>Both feature tracking and feature matching aims to <strong>find correspondences</strong> of feature point sets across subsequent frames. With enough corresponding feature pairs, we are able to compute the essential matrix described in next section. Both is imeplemented in this project:</p>
+    <a href="#feature-matching--tracking" class="header-mark"></a>5 - Feature Matching / Tracking</h2><p>Both feature tracking and feature matching aims to <strong>find correspondences</strong> of feature point sets across subsequent frames. With enough corresponding feature pairs, we are able to compute the essential matrix described in next section. Both is imeplemented in this project:</p>
 <ol>
 <li><strong>Feature Matching</strong> (<a href="https://docs.opencv.org/3.4/dc/dc3/tutorial_py_matcher.html" target="_blank" rel="noopener noreferrer">opencv tutorial</a>)
 Here we tested two matchers: Brute-Force and FLANN (Fast Library for Approximate Nearest Neighbors) implemented in OpenCV. Brute-Force matcher is straightforward. It takes the descriptor of one feature in the first set and matches it with all other features in the entire second set using a distance calculation. On the other hand, FLANN is designed for fast nearest neighbor search in large datasets with high-dimensional features.</li>
@@ -212,7 +212,7 @@ Here we applied Lucas–Kanade method for optical flow tracking. This method ope
   <figcaption>Figure 3: Optical flow</figcaption>
 </figure> -->
 <h2 id="motion-estimation" class="headerLink">
-    <a href="#motion-estimation" class="header-mark"></a>6. Motion Estimation</h2><p>Motion estimation determines the movement of a camera through a sequence of images. It can actually be divided into three sub-steps:</p>
+    <a href="#motion-estimation" class="header-mark"></a>6 - Motion Estimation</h2><p>Motion estimation determines the movement of a camera through a sequence of images. It can actually be divided into three sub-steps:</p>
 <ol>
 <li>Estimate essential matrix (<a href="https://hackmd.io/@jackyyeh/Hkk6MrqIT" target="_blank" rel="noopener noreferrer">detailed post</a>)
 Several techniques can be used for the computation of an essential matrix. Here we implemented Nister’s 5-point and 8-point algorithm with RANSAC.</li>
@@ -243,18 +243,16 @@ $$
 where scale factor we will never know in the monocular scheme. In my implementation, I just use the ground truth that KITTI dataset provides.</li>
 </ol>
 <h2 id="heuristics" class="headerLink">
-    <a href="#heuristics" class="header-mark"></a>7. Heuristics</h2><p>scale</p>
+    <a href="#heuristics" class="header-mark"></a>7 - Heuristics</h2><p>scale</p>
 <h2 id="results" class="headerLink">
-    <a href="#results" class="header-mark"></a>8. Results</h2><h3 id="dataset" class="headerLink">
+    <a href="#results" class="header-mark"></a>8 - Results</h2><h3 id="dataset" class="headerLink">
     <a href="#dataset" class="header-mark"></a>Dataset</h3><p>Kitti</p>
 <h2 id="future-work" class="headerLink">
-    <a href="#future-work" class="header-mark"></a>9. Future Work</h2><ol>
+    <a href="#future-work" class="header-mark"></a>9 - Future Work</h2><ol>
 <li>Integrate graph optimization</li>
 <li>Superpoint</li>
 </ol>
-</div><div id="comments"><div id="utterances"></div><noscript>
-                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
-            </noscript></div></div></div>
+</div></div></div>
         </main></div>
 
     <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
@@ -263,7 +261,7 @@ where scale factor we will never know in the monocular scheme. In my implementat
             <i class="fas fa-comment fa-fw"></i>
         </a>
     </div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
-        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"Hugo-DoIt/utterances-comments"}},"data":{"desktop-header-typeit":"Jacky Yeh's Website","mobile-header-typeit":"Jacky Yeh's Website"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/utterances.min.js" defer></script></div>
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"desktop-header-typeit":"Jacky Yeh's Website","mobile-header-typeit":"Jacky Yeh's Website"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
 </body>
 
 </html>

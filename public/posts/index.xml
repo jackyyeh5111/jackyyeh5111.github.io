@@ -4,12 +4,5 @@
         <link>https://jackyyeh5111.github.io/posts/</link>
         <description>All Posts | jackyyeh</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>heige.pcloud@outlook.com (PCloud)</managingEditor>
-            <webMaster>heige.pcloud@outlook.com (PCloud)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Jan 2024 21:29:01 &#43;0800</lastBuildDate><atom:link href="https://jackyyeh5111.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Real-time Web-based Face Mask Detection</title>
-    <link>https://jackyyeh5111.github.io/real-time-web-based-face-mask-detection/</link>
-    <pubDate>Tue, 02 Jan 2024 21:29:01 &#43;0800</pubDate><author>
-        <name>PCloud</name>
-    </author><guid>https://jackyyeh5111.github.io/real-time-web-based-face-mask-detection/</guid>
-    <description><![CDATA[Github Repository This project is built with OpenCV, YOLOv3 and some Computer Vision concepts in order to detect face masks in real-time video streams.1. Key Features Train YOLO with custom dataset. Enabling face mask detection in real-time video streams using Streamlit. 2. MotivationIn the midst of the persistent COVID-19 pandemic, the need for effective face mask detection applications has surged. However, the scarcity of substantial datasets containing images depicting individuals wearing masks has presented a significant obstacle, intensifying the complexity and difficulty of this undertaking.]]></description>
-</item></channel>
+            <webMaster>heige.pcloud@outlook.com (PCloud)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Jan 2024 21:29:01 &#43;0800</lastBuildDate><atom:link href="https://jackyyeh5111.github.io/posts/" rel="self" type="application/rss+xml" /></channel>
 </rss>

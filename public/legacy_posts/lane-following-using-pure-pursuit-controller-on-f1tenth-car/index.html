@@ -35,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/"
-        },"image": ["https://jackyyeh5111.github.io/images/Apple-Devices-Preview.png"],"genre": "legacy_posts","keywords": "installation, configuration","wordcount":  859 ,
+        },"image": ["https://jackyyeh5111.github.io/images/Apple-Devices-Preview.png"],"genre": "legacy_posts","keywords": "installation, configuration","wordcount":  865 ,
         "url": "https://jackyyeh5111.github.io/legacy_posts/lane-following-using-pure-pursuit-controller-on-f1tenth-car/","datePublished": "2024-01-02T21:29:01+08:00","dateModified": "2024-01-07T15:33:33-06:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -183,12 +183,12 @@
 <p>The project implements a vision-based lane following system. Our aim to make vehicle follow the lane accurately and quickly without collision using Pure Pursuit Controller given RGB images. Our vehicle platform is build on <a href="https://f1tenth.org/" target="_blank" rel="noopener noreferrer">F1TENTH</a>.</p>
 <p>Please check out our <a href="https://www.youtube.com/watch?v=mselI6W_V-o" target="_blank" rel="noopener noreferrer">final presentation video</a> for brief summary for the proejct.</p>
 <h2 id="overview" class="headerLink">
-    <a href="#overview" class="header-mark"></a>1. Overview</h2><p>The vehicle is able to follow the lane accurately without collision:</p>
+    <a href="#overview" class="header-mark"></a>1 - Overview</h2><p>The vehicle is able to follow the lane accurately without collision:</p>
 <figure style="border-style: none">
 <img src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/7e11faf1-e84e-420c-ac01-fbc8b3902dc0">
 </figure>
 <h2 id="method" class="headerLink">
-    <a href="#method" class="header-mark"></a>2. Method</h2><figure>
+    <a href="#method" class="header-mark"></a>2 - Method</h2><figure>
           <img width="936" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/2c44461c-4c9d-469f-abe3-95bb0d005945">
       <figcaption>Figure 1: method diagram</figcaption>
     </figure>
@@ -281,7 +281,7 @@ $$
 $$
 where $l_{d}$ denotes look ahead distance, $\alpha$ denotes relative yaw error, and $L$ is the wheel base distance.</p>
 <h2 id="collision-avoidance" class="headerLink">
-    <a href="#collision-avoidance" class="header-mark"></a>3. Collision avoidance</h2><p>In this project, two criteria are employed to determine if an obstacle exists ahead.</p>
+    <a href="#collision-avoidance" class="header-mark"></a>3 - Collision avoidance</h2><p>In this project, two criteria are employed to determine if an obstacle exists ahead.</p>
 <ol>
 <li><strong>Close last waypoint</strong>: the first criteria is that the distance of last waypoint has to be close enough, because the lane is blocked by an obstacle in the middle.</li>
 <li><strong>Not reach boundary</strong>: this criteria complements the first one. Sometimes the distance of last waypoint is close enough because the vehicle is turning instead of being blocked as case 1 in the following graph.</li>
@@ -289,22 +289,20 @@ where $l_{d}$ denotes look ahead distance, $\alpha$ denotes relative yaw error, 
 <img width="885" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/7960e9b7-7250-4608-b671-2952d8be8e18">
 <p>You may notice that this naive collision avoidance algorithm works only when the lane detection method is robust. In future work, we intend to improve the algorithm by integrating image object detection or lidar sensors.</p>
 <h2 id="troubleshooting" class="headerLink">
-    <a href="#troubleshooting" class="header-mark"></a>4. Troubleshooting</h2><ul>
+    <a href="#troubleshooting" class="header-mark"></a>4 - Troubleshooting</h2><ul>
 <li>Long response latency from the F1 car may result from a low battery issue.</li>
 <li>F1 car proceeds unsmoothly in a rumble if multiple control signals are sent within a single frame, even if the control signal remains unchanged.</li>
 </ul>
 <h2 id="simulation" class="headerLink">
-    <a href="#simulation" class="header-mark"></a>5. Simulation</h2><p>Please refer to the <a href="https://github.com/jackyyeh5111/ECE484-Principles-Of-Safe-Autonomy-2023Fall-Final/tree/main/controller_simulation" target="_blank" rel="noopener noreferrer">link</a> for simulation.</p>
+    <a href="#simulation" class="header-mark"></a>5 - Simulation</h2><p>Please refer to the <a href="https://github.com/jackyyeh5111/ECE484-Principles-Of-Safe-Autonomy-2023Fall-Final/tree/main/controller_simulation" target="_blank" rel="noopener noreferrer">link</a> for simulation.</p>
 <img width="885" alt="image" src="https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/105990e7-43ca-422c-96f3-22af7c10cd99">
 <h2 id="todo" class="headerLink">
-    <a href="#todo" class="header-mark"></a>6. TODO</h2><ul>
+    <a href="#todo" class="header-mark"></a>6 - TODO</h2><ul>
 <li><i class="far fa-square fa-fw"></i> ML method for lane detection such as <a href="https://github.com/MaybeShewill-CV/lanenet-lane-detection" target="_blank" rel="noopener noreferrer">lanenet</a>.</li>
 <li><i class="far fa-square fa-fw"></i> Integrate lidar to collision avoidance .algorithm</li>
 <li><i class="far fa-square fa-fw"></i> Implement MPC</li>
 </ul>
-</div><div id="comments"><div id="utterances"></div><noscript>
-                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
-            </noscript></div></div></div>
+</div></div></div>
         </main></div>
 
     <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
@@ -313,7 +311,7 @@ where $l_{d}$ denotes look ahead distance, $\alpha$ denotes relative yaw error, 
             <i class="fas fa-comment fa-fw"></i>
         </a>
     </div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
-        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"Hugo-DoIt/utterances-comments"}},"data":{"desktop-header-typeit":"Jacky Yeh's Website","mobile-header-typeit":"Jacky Yeh's Website"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/utterances.min.js" defer></script></div>
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"desktop-header-typeit":"Jacky Yeh's Website","mobile-header-typeit":"Jacky Yeh's Website"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"en_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":300,"type":"algolia"},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
 </body>
 
 </html>

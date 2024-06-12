@@ -4,6 +4,12 @@
 {{< showcase "Lane Following using Pure Pursuit Controller on F1TENTH Car" "Skills - ROS, OpenCV, F1tenth" "https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/3c381fc3-fd02-4b45-989e-080042ea29c0" "/lane-following-using-pure-pursuit-controller-on-f1tenth-car/" >}}
 
 {{< showcase 
+"Monocular Feature-Based Visual Odometry" 
+"Skills - Python, OpenCV, g2o" 
+"https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/7cc6a839-855e-4535-8fde-fb5bc556bc09" 
+"/monocular-feature-based-visual-odometry/" >}}
+
+{{< showcase 
 "Real-time Web-based Face Mask Detection" 
 "Skills - Python, YOLO, WebRTC" 
 "https://github.com/jackyyeh5111/jackyyeh5111.github.io/assets/22386566/f17f5afd-142d-4120-a70f-f1d1d2b710cf" 
